@@ -1,61 +1,27 @@
 {
-  "name": "jjacome",
-  "version": "1.0.0",
-  "description": "Personal Website",
-  "main": "index.js",
-  "babel": {
-    "presets": [
-      "env",
-      "react",
-      "stage-2"
-    ]
+  "name": "jjacome.com",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
+    "react-scripts": "0.9.5",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack -p",
-    "test": "npm run test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jorgejac1/jjacome.git"
-  },
-  "keywords": [
-    "Personal"
-  ],
-  "author": "Jorge Jacome",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jorgejac1/jjacome/issues"
-  },
-  "homepage": "https://github.com/jorgejac1/jjacome#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.9.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
-    "file-loader": "^1.1.11",
-    "node-sass": "^4.8.3",
-    "postcss-loader": "^2.1.3",
-    "react-hot-loader": "^4.0.0",
-    "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.3",
-    "url-loader": "^1.0.1",
-    "webpack": "^4.3.0",
-    "webpack-cli": "^2.0.13",
-    "webpack-dev-server": "^3.1.1"
-  },
-  "dependencies": {
-    "bootstrap": "^4.0.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2"
+    "start": "react-scripts start",
+    "lint": "estlint --ignore-path .eslintignore --ext js,jsx .",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
