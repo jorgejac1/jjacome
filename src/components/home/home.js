@@ -32,27 +32,27 @@ function Home() {
           )}
           <ul className="list-unstyled list-social">
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/jorgea.jacome.g" target="_blank">
                 <i className="fab fa-facebook fa-2x"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://twitter.com/JorgeJac" target="_blank">
                 <i className="fab fa-twitter fa-2x"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/jorgejac1/" target="_blank">
                 <i className="fab fa-instagram fa-2x"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/jorge-jacome/" target="_blank">
                 <i className="fab fa-linkedin fa-2x"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/jorgejac1" target="_blank">
                 <i className="fab fa-github fa-2x"></i>
               </a>
             </li>

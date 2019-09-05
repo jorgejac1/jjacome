@@ -1,6 +1,7 @@
 {
   "name": "jjacome.com",
   "version": "0.1.0",
+  "homepage": "www.jjacome.com",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
