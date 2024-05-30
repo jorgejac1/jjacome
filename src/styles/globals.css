@@ -1,0 +1,61 @@
+/* styles/globals.css */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: black !important;  /* Set background to black */
+  color: white !important;             /* Set font color to white */
+  scroll-behavior: smooth !important;  /* Enable smooth scrolling */
+  line-height: 1.6;                    /* Improve readability */
+  overflow-x: hidden;                  /* Prevent horizontal scroll */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1em 0;                   /* Consistent spacing for headings */
+  font-weight: 600;                    /* Consistent font weight for headings */
+}
+
+p {
+  margin: 0 0 1em 0;                   /* Consistent spacing for paragraphs */
+}
+
+/* Custom hover effect */
+.nav-link:hover ~ .nav-link {
+  color: #2b5b63;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth scrolling for all browsers */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b5b63;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #66d9ed;
+}
