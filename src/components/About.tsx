@@ -36,7 +36,7 @@ const About = () => {
               About Me
             </Heading>
           </Box>
-          <Text fontSize={{ base: 'md', md: 'lg' }} mb={20}>
+          <Text fontSize={{ base: 'md', md: 'lg' }} mb={20} pl={{ base: 0, md: '0px', sm:'10px'}}>
             Hi, my name is Jorge Jacome. Im a Senior Front End Developer from Mexico.
             Over the years I developed a skill set in a range of technologies like
             <Box as="span" bg="yellow.300" color="black" fontWeight="bold" px={1} mx={1} borderRadius="md">

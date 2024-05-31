@@ -9,9 +9,13 @@ import {
   Tag,
   TagLabel,
   ScaleFade,
+  Link,
+  Icon,
 } from '@chakra-ui/react';
 import { useInView } from 'react-intersection-observer';
 import { experiences } from '../data/experiencesData';
+import { DownloadIcon } from '@chakra-ui/icons';
+import { FaFilePdf } from 'react-icons/fa';
 
 const Experience = () => {
   const { ref, inView } = useInView({
@@ -85,6 +89,15 @@ const Experience = () => {
             </Box>
           </ScaleFade>
         ))}
+        <Flex justifyContent="center" mb={8} alignItems="center">
+          <Link href="/assets/Resume.pdf" download="Jorge_Jacome_Resume.pdf" display="flex" alignItems="center" color="teal.300">
+            <Icon as={FaFilePdf} w={5} h={5} mr={2} />
+            <Text fontSize="xl" mb={0} fontWeight="bold" fontFamily="'Comic Sans MS', cursive, sans-serif">
+              Download My Resume! 📄
+            </Text>
+            <DownloadIcon w={5} h={5} ml={2} />
+          </Link>
+        </Flex>
       </SimpleGrid>
     </Box>
   );
