@@ -1,0 +1,128 @@
+{
+  "projects": [
+    {
+      "id": "hechomx",
+      "title": "HechoMX - Tienda Virtual",
+      "description": "Full-featured e-commerce platform built with modern web technologies. Includes product catalog, shopping cart, and checkout flow.",
+      "technologies": ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+      "githubUrl": "https://github.com/jorgejac1/hechomx",
+      "featured": true,
+      "category": "E-Commerce",
+      "metrics": {
+        "impact": "Full-stack e-commerce solution",
+        "scale": "Production-ready"
+      }
+    },
+    {
+      "id": "interview-prep",
+      "title": "Interview Prep - QA UI Engineer",
+      "description": "Comprehensive interview preparation platform for QA and UI Engineers. Features coding challenges, system design problems, and technical interview questions.",
+      "technologies": ["TypeScript", "React", "Testing Libraries"],
+      "githubUrl": "https://github.com/jorgejac1/interview-prep-qa-ui-engineer",
+      "featured": true,
+      "category": "Education",
+      "metrics": {
+        "impact": "Interview preparation tool",
+        "scale": "Educational resource"
+      }
+    },
+    {
+      "id": "lyra",
+      "title": "Lyra - Frontend Framework",
+      "description": "Console-time, aTly-first, signal-driven front-end framework. Modern approach to building reactive user interfaces.",
+      "technologies": ["TypeScript", "Signals", "Modern JS"],
+      "githubUrl": "https://github.com/jorgejac1/lyra",
+      "featured": true,
+      "category": "Framework",
+      "metrics": {
+        "impact": "Signal-driven architecture",
+        "scale": "Open source framework"
+      }
+    },
+    {
+      "id": "finance-dashboard",
+      "title": "Finance Dashboard",
+      "description": "Real-time financial analytics dashboard with data visualization, portfolio tracking, and market insights.",
+      "technologies": ["JavaScript", "React", "Chart.js", "REST API"],
+      "githubUrl": "https://github.com/jorgejac1/finance-dashboard",
+      "featured": true,
+      "category": "Finance",
+      "metrics": {
+        "impact": "Financial data visualization",
+        "scale": "Real-time analytics"
+      }
+    },
+    {
+      "id": "restaurant-yelp",
+      "title": "Restaurant Yelp App",
+      "description": "Browse and discover restaurants using the Yelp API. Features include search, filtering, ratings, and location-based recommendations.",
+      "technologies": ["JavaScript", "React", "Yelp API", "Geolocation"],
+      "githubUrl": "https://github.com/jorgejac1/restaurant-yelp-app",
+      "featured": true,
+      "category": "Web App",
+      "metrics": {
+        "impact": "API integration showcase",
+        "scale": "Consumer application"
+      }
+    },
+    {
+      "id": "social-network",
+      "title": "Social Network Platform",
+      "description": "Full-stack social networking application with user authentication, posts, comments, and real-time updates.",
+      "technologies": ["JavaScript", "React", "Node.js", "MongoDB", "WebSocket"],
+      "githubUrl": "https://github.com/jorgejac1/social-network",
+      "featured": false,
+      "category": "Social",
+      "metrics": {
+        "impact": "Real-time social features",
+        "scale": "Multi-user platform"
+      }
+    },
+    {
+      "id": "product-shopping",
+      "title": "Product Shopping - AMC Test",
+      "description": "E-commerce application with product catalog, shopping cart functionality, and payment integration. Technical assessment showcase.",
+      "technologies": ["JavaScript", "React", "Redux", "REST API"],
+      "githubUrl": "https://github.com/jorgejac1/product-shopping",
+      "featured": false,
+      "category": "E-Commerce",
+      "metrics": {
+        "impact": "Technical assessment",
+        "scale": "Production patterns"
+      }
+    },
+    {
+      "id": "dfs-app",
+      "title": "DFS Application",
+      "description": "Application to create NBA projections, ownership and more data with ML algorithms for daily fantasy sports.",
+      "technologies": ["Python", "Machine Learning", "Data Analysis"],
+      "githubUrl": "https://github.com/jorgejac1/dfs-app",
+      "featured": true,
+      "category": "Machine Learning",
+      "metrics": {
+        "impact": "ML-driven predictions",
+        "scale": "Sports analytics"
+      }
+    },
+    {
+      "id": "portfolio",
+      "title": "Personal Portfolio Website",
+      "description": "My personal portfolio showcasing professional experience and projects. Built with modern web technologies and deployed on Vercel.",
+      "technologies": ["React", "Next.js", "TypeScript", "Chakra UI"],
+      "githubUrl": "https://github.com/jorgejac1/jjacome",
+      "liveUrl": "https://jjacome.com",
+      "featured": false,
+      "category": "Portfolio",
+      "metrics": {
+        "impact": "Personal branding",
+        "scale": "Production site"
+      }
+    }
+  ],
+  "stats": {
+    "totalProjects": 12,
+    "yearsOfExperience": 14,
+    "companiesWorked": 7,
+    "teamsMentored": 10
+  }
+}
