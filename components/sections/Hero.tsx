@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Name */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
           <span className="text-white">Hi, I'm </span>
           <span className="bg-gradient-to-r from-primary-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
             {profile.name}
@@ -33,51 +33,51 @@ export const Hero: React.FC = () => {
         </h1>
 
         {/* Title */}
-        <p className="text-2xl md:text-3xl text-primary-400 font-semibold mb-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+        <p className="text-xl sm:text-2xl md:text-3xl text-primary-400 font-semibold mb-3 sm:mb-4 animate-slide-up px-4" style={{ animationDelay: '0.2s' }}>
           {profile.title} @ {profile.currentCompany}
         </p>
 
         {/* Tagline */}
-        <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-12 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+        <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8 sm:mb-12 px-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
           {profile.tagline}
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
-          <Button href="#experience" variant="primary" size="lg">
+        <div className="flex flex-col gap-3 justify-center items-center animate-slide-up px-4 max-w-md mx-auto" style={{ animationDelay: '0.4s' }}>
+          <Button href="#experience" variant="primary" size="lg" className="w-full">
             View Experience
           </Button>
-          <Button href="#projects" variant="outline" size="lg">
+          <Button href="#projects" variant="outline" size="lg" className="w-full">
             See Projects
           </Button>
-          <Button href={profile.github} variant="secondary" size="lg" external>
+          <Button href={profile.github} variant="secondary" size="lg" external className="w-full">
             GitHub Profile
           </Button>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-12 sm:mt-20 animate-fade-in px-4" style={{ animationDelay: '0.5s' }}>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">14+</div>
-            <div className="text-slate-400 text-sm">Years Experience</div>
+            <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">14+</div>
+            <div className="text-slate-400 text-xs sm:text-sm">Years Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">1M+</div>
-            <div className="text-slate-400 text-sm">Daily Users Served</div>
+            <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">1M+</div>
+            <div className="text-slate-400 text-xs sm:text-sm">Daily Users Served</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">30+</div>
-            <div className="text-slate-400 text-sm">Components Built</div>
+            <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">30+</div>
+            <div className="text-slate-400 text-xs sm:text-sm">Components Built</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-white mb-2">10+</div>
-            <div className="text-slate-400 text-sm">Engineers Mentored</div>
+            <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">10+</div>
+            <div className="text-slate-400 text-xs sm:text-sm">Engineers Mentored</div>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">
         <div className="w-6 h-10 border-2 border-slate-400 rounded-full flex justify-center">
           <div className="w-1.5 h-3 bg-slate-400 rounded-full mt-2" />
         </div>
