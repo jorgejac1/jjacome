@@ -1,0 +1,99 @@
+{
+  "skillCategories": [
+    {
+      "id": "frontend",
+      "name": "Frontend Development",
+      "icon": "Code2",
+      "skills": [
+        { "name": "React.js", "level": 95, "yearsOfExperience": 9 },
+        { "name": "TypeScript", "level": 92, "yearsOfExperience": 6 },
+        { "name": "Next.js", "level": 88, "yearsOfExperience": 4 },
+        { "name": "JavaScript (ES6+)", "level": 95, "yearsOfExperience": 14 },
+        { "name": "HTML5 & CSS3", "level": 95, "yearsOfExperience": 14 },
+        { "name": "Redux", "level": 90, "yearsOfExperience": 7 },
+        { "name": "React Hooks", "level": 93, "yearsOfExperience": 5 }
+      ]
+    },
+    {
+      "id": "styling",
+      "name": "Styling & Design",
+      "icon": "Palette",
+      "skills": [
+        { "name": "Tailwind CSS", "level": 90, "yearsOfExperience": 3 },
+        { "name": "Bootstrap", "level": 85, "yearsOfExperience": 8 },
+        { "name": "Responsive Design", "level": 95, "yearsOfExperience": 10 },
+        { "name": "Accessibility (a11y)", "level": 88, "yearsOfExperience": 6 }
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend & APIs",
+      "icon": "Server",
+      "skills": [
+        { "name": "Node.js", "level": 88, "yearsOfExperience": 6 },
+        { "name": "GraphQL", "level": 82, "yearsOfExperience": 4 },
+        { "name": "REST APIs", "level": 90, "yearsOfExperience": 10 },
+        { "name": "Java", "level": 80, "yearsOfExperience": 8 }
+      ]
+    },
+    {
+      "id": "database",
+      "name": "Databases",
+      "icon": "Database",
+      "skills": [
+        { "name": "MongoDB", "level": 80, "yearsOfExperience": 5 },
+        { "name": "MySQL", "level": 82, "yearsOfExperience": 10 },
+        { "name": "Oracle DB", "level": 78, "yearsOfExperience": 6 },
+        { "name": "Redis", "level": 75, "yearsOfExperience": 4 }
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps & Cloud",
+      "icon": "Cloud",
+      "skills": [
+        { "name": "Docker", "level": 82, "yearsOfExperience": 5 },
+        { "name": "AWS", "level": 78, "yearsOfExperience": 4 },
+        { "name": "CI/CD", "level": 85, "yearsOfExperience": 6 },
+        { "name": "Git", "level": 95, "yearsOfExperience": 12 }
+      ]
+    },
+    {
+      "id": "testing",
+      "name": "Testing & Quality",
+      "icon": "CheckCircle",
+      "skills": [
+        { "name": "Jest", "level": 90, "yearsOfExperience": 6 },
+        { "name": "Selenium", "level": 85, "yearsOfExperience": 5 },
+        { "name": "Unit Testing", "level": 92, "yearsOfExperience": 8 },
+        { "name": "Performance Testing", "level": 88, "yearsOfExperience": 6 }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Tools & Monitoring",
+      "icon": "Wrench",
+      "skills": [
+        { "name": "JIRA", "level": 90, "yearsOfExperience": 9 },
+        { "name": "Splunk", "level": 80, "yearsOfExperience": 5 },
+        { "name": "Agile/Scrum", "level": 95, "yearsOfExperience": 10 }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "Other Languages",
+      "icon": "Code",
+      "skills": [
+        { "name": "Python", "level": 70, "yearsOfExperience": 3 },
+        { "name": "Kotlin", "level": 65, "yearsOfExperience": 2 },
+        { "name": "Go", "level": 60, "yearsOfExperience": 1 }
+      ]
+    }
+  ],
+  "languages": [
+    { "language": "Spanish", "proficiency": "Native" },
+    { "language": "English", "proficiency": "Fluent" },
+    { "language": "Portuguese", "proficiency": "Intermediate" },
+    { "language": "French", "proficiency": "Intermediate" }
+  ]
+}

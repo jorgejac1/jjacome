@@ -1,88 +1,132 @@
-# 🌟 Jorge Jacome's Personal Portfolio
+# Jorge Jacome - Portfolio
 
-Welcome to my personal portfolio website. This project showcases my skills, experiences, and projects as a Senior Front End Engineer.
+Modern, high-performance portfolio built with Next.js 14, TypeScript, and Tailwind CSS.
 
-![Portfolio Screenshot](./public/assets/portfolio-screenshot.png)
+## 🚀 Features
 
-## 📋 Table of Contents
+- ⚡ **Next.js 14** with App Router
+- 🎨 **Tailwind CSS** for styling
+- 📘 **TypeScript** for type safety
+- 🎭 **Framer Motion** for animations
+- 📱 **Fully Responsive** design
+- ♿ **Accessible** components
+- 🎯 **SEO Optimized**
+- 📊 **JSON-based data** - Easy to update
+- 🧩 **Reusable components** - Well-organized architecture
 
-- [🌟 Jorge Jacome's Personal Portfolio](#-jorge-jacomes-personal-portfolio)
-  - [📋 Table of Contents](#-table-of-contents)
-  - [🔍 About](#-about)
-  - [🛠 Skills](#-skills)
-    - [Front-End](#front-end)
-    - [Back-End](#back-end)
-    - [Testing](#testing)
-  - [💼 Experience](#-experience)
-  - [📞 Contact](#-contact)
-  - [🛠 Setup](#-setup)
-  - [🚀 Deployment](#-deployment)
-  - [📄 License](#-license)
-    - [Steps to Follow](#steps-to-follow)
+## 📁 Project Structure
 
-## 🔍 About
+```
+portfolio-nextjs/
+├── app/                    # Next.js app directory
+│   ├── layout.tsx         # Root layout with metadata
+│   ├── page.tsx           # Main page
+│   └── globals.css        # Global styles
+├── components/
+│   ├── ui/                # Reusable UI components
+│   │   ├── Button.tsx
+│   │   ├── Card.tsx
+│   │   ├── Section.tsx
+│   │   └── SkillBar.tsx
+│   ├── sections/          # Page sections
+│   │   ├── Hero.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Projects.tsx
+│   │   └── Contact.tsx
+│   └── layout/            # Layout components
+│       ├── Navigation.tsx
+│       └── Footer.tsx
+├── data/                  # JSON data files
+│   ├── profile.json
+│   ├── experience.json
+│   ├── skills.json
+│   └── projects.json
+└── public/                # Static assets
 
-This portfolio highlights my journey and expertise in web development, particularly focusing on front-end technologies like React, Next.js, and Chakra UI.
+```
 
-## 🛠 Skills
+## 🛠️ Installation
 
-### Front-End
-- ⚛️ **ReactJS**
-- 🔮 **Next.js**
-- 📜 **TypeScript**
-- 🎨 **CSS** (SASS, Tailwind, MaterialUI)
+1. **Clone the repository**
+```bash
+git clone https://github.com/jorgejac1/jjacome.git
+cd portfolio-nextjs
+```
 
-### Back-End
-- 🟢 **Node.js**
-- 🐳 **Docker**
-- 🛠 **CI/CD**
+2. **Install dependencies**
+```bash
+npm install
+```
 
-### Testing
-- 🃏 **Jest**
-- ☑️ **Selenium**
-- 🥒 **Cucumber**
+3. **Run development server**
+```bash
+npm run dev
+```
 
-## 💼 Experience
+4. **Open your browser**
+Navigate to [http://localhost:3000](http://localhost:3000)
 
-Showcasing my professional experience with companies like American Express, iGATE, Systems USA, Softtek, Radycal Systems, and Nettours.
+## 📝 Customization
 
-## 📞 Contact
+### Update Personal Information
 
-Feel free to get in touch via the contact form on the website or directly at [jorgejac97@gmail.com](mailto:jorgejac97@gmail.com).
+Edit the JSON files in the `/data` directory:
 
-## 🛠 Setup
+- `profile.json` - Personal info, contact details
+- `experience.json` - Work experience, positions, awards
+- `skills.json` - Technical skills, proficiency levels
+- `projects.json` - Portfolio projects, descriptions
 
-To run this project locally, follow these steps:
+### Modify Styling
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/jorgejac1/jjacome.git
-2. Navigate to the project directory:
-   ```sh
-   cd jjacome
-4. Install the dependencies:
-   ```sh
-   npm install
-5. Create a .env.local file in the root of the project and add the necessary environment variables:
-   ```sh
-   NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
-   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
-   NEXT_PUBLIC_EMAILJS_USER_ID=your_user_id
-6. Run the development server:
-   ```sh
-   npm run dev
-7. Open your browser and go to http://localhost:3000.
+Tailwind configuration is in `tailwind.config.ts`. Customize:
+- Colors (primary theme colors)
+- Animations
+- Breakpoints
+- Custom utilities
 
-## 🚀 Deployment
-This project can be deployed using Vercel, Netlify, or any other static site hosting service. Ensure you have added the environment variables in the hosting service's settings.
+### Add New Sections
+
+1. Create component in `components/sections/`
+2. Import and add to `app/page.tsx`
+3. Update navigation in `components/layout/Navigation.tsx`
+
+## 🚢 Deployment
+
+### Vercel (Recommended)
+
+1. Push code to GitHub
+2. Import project in [Vercel](https://vercel.com)
+3. Deploy with one click
+
+### Other Platforms
+
+```bash
+npm run build
+npm start
+```
+
+## 🎨 Technologies Used
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **Deployment**: Vercel
 
 ## 📄 License
-This project is licensed under the MIT License.
 
-### Steps to Follow
+MIT License - feel free to use this project for your own portfolio!
 
-1. **Add a Portfolio Screenshot**: Save an image of your portfolio as `portfolio-screenshot.png` in the `public/assets/` directory.
-2. **Update Links**: Ensure that all links in the README file are correct.
-3. **Environment Variables**: Make sure to replace placeholder values with actual ones in the `.env.local` file.
+## 🤝 Contact
 
-This README provides a comprehensive overview of your project and ensures that visitors can easily understand and set up your portfolio website.
+- **Email**: jorgejac97@gmail.com
+- **LinkedIn**: [jorge-jacome](https://linkedin.com/in/jorge-jacome)
+- **GitHub**: [jorgejac1](https://github.com/jorgejac1)
+- **Website**: [jjacome.com](https://jjacome.com)
+
+---
+
+Built with ❤️ by Jorge Jacome

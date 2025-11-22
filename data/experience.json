@@ -1,0 +1,166 @@
+{
+  "experiences": [
+    {
+      "id": "espn",
+      "company": "ESPN",
+      "location": "New York, NY",
+      "positions": [
+        {
+          "title": "Lead Software Engineer",
+          "period": "08/2024 - Present",
+          "current": true,
+          "highlights": [
+            "Lead team to develop multiple features in ESPN.com that drives users to place bets as part of the sportsbook project",
+            "Architecting features using ReactJS, TypeScript, NodeJS connected to ESPN BET and Penn backend services",
+            "Lead engineers to release features and implement application optimizations reducing bundle time",
+            "Driving performance improvements across the platform"
+          ],
+          "technologies": ["React", "TypeScript", "Node.js", "ESPN BET API"]
+        }
+      ]
+    },
+    {
+      "id": "amex",
+      "company": "American Express",
+      "location": "New York, NY",
+      "positions": [
+        {
+          "title": "Senior Engineer II",
+          "period": "12/2018 - 07/2024",
+          "highlights": [
+            "Delivered 30+ high-performance web components using ReactJS, TypeScript, Redux, JavaScript, and NodeJS, enhancing user experience and improving page load speed by 20%",
+            "Led four scrum teams in designing and releasing five major customer journey projects, significantly improving customer satisfaction by 25%",
+            "Achieved 100%+ unit testing coverage for all features, reducing bugs by 30% using JEST and React Testing Library",
+            "Developed 20+ reusable custom components, boosting code reusability by 35% and accelerating feature development by 25%",
+            "Reduced production errors by 50% through comprehensive monitoring with Splunk and swift issue resolution",
+            "Mentored 10+ engineers, improving team productivity by 30% and code quality metrics by 20%",
+            "Partnered with backend engineers to design efficient API data structures, leveraging SWR and react-hooks to optimize data fetching by 40%",
+            "Managed deployment of over 100 repositories/components, streamlining the CI/CD process with Jenkins"
+          ],
+          "technologies": ["React", "TypeScript", "Redux", "Node.js", "Jest", "React Testing Library", "SWR", "Jenkins", "Splunk", "GraphQL"]
+        },
+        {
+          "title": "Engineer I",
+          "period": "09/2017 - 12/2018",
+          "highlights": [
+            "Developed over 25 high-performance web components, improving customer interaction and reducing load times by 15%",
+            "Led three scrum teams in designing and launching a customer journey for marketing and messaging features, boosting user engagement by 30%",
+            "Attained 98% code coverage using JEST, Mocha, and Chai, reducing bug rates by 25% post-launch",
+            "Developed and maintained 30+ React components for the OneAmex platform, improving reusability by 40%",
+            "Worked as temporary Technical Project Manager, improving delivery efficiency by 20%",
+            "Led production application maintenance, cutting error rates by 40% through error monitoring and swift resolution",
+            "Mentored 20 engineers on best practices, leading to a 25% improvement in code quality and a 15% increase in productivity",
+            "Utilized GraphQL extensively to fetch data from APIs, significantly improving data retrieval efficiency"
+          ],
+          "technologies": ["React", "JavaScript", "Redux", "GraphQL", "Jest", "Mocha", "Chai", "Docker", "Jenkins"]
+        },
+        {
+          "title": "Engineer II",
+          "period": "09/2015 - 09/2017",
+          "highlights": [
+            "Spearheaded the re-platforming of the American Express MYCA Site, delivering over 20 customer-centric features that improved navigation and functionality by 30%",
+            "Participated in the initial stages of legacy migration to a robust online application for U.S. and international markets",
+            "Temporarily served as Technical Project Manager for two scrum teams and managed a team of two engineers to support production errors using Splunk",
+            "Worked on improving early-stage dashboard performance using server-side rendering and API analysis, leading to improved SLAs",
+            "Collaborated with Product Owners to refine and translate more than 15 Business Requirement Documents (BRDs) into actionable designs, accelerating development by 20%",
+            "Managed the deployment of 50+ features through the CI/CD pipeline using Jenkins, achieving a 99% success rate in QA automation testing"
+          ],
+          "technologies": ["React", "Node.js", "Redux", "Jest", "SSR", "Jenkins", "Splunk"]
+        }
+      ]
+    },
+    {
+      "id": "igate",
+      "company": "iGATE",
+      "location": "Warren, NJ",
+      "positions": [
+        {
+          "title": "Java UI Developer",
+          "period": "11/2014 - 09/2015",
+          "highlights": [
+            "Created internal websites for company vendors providing product and service information",
+            "Developed map application using Java, JSF, Servlets integrated with Google Maps API",
+            "Built Chub ecosystem providing vendors with client and company location mapping"
+          ],
+          "technologies": ["Java", "JSF", "Servlets", "HTML", "CSS", "JavaScript", "jQuery", "Ajax", "Google Maps API"]
+        }
+      ]
+    },
+    {
+      "id": "systems-usa",
+      "company": "Systems USA",
+      "location": "Harrisburg, PA",
+      "positions": [
+        {
+          "title": "Java UI Developer",
+          "period": "01/2013 - 10/2014",
+          "highlights": [
+            "Java Developer consultant at Deloitte leading development for Virginia Case Management System",
+            "Built application processing citizen data and eligibility for state benefits (100,000+ users)",
+            "Participated in agile ceremonies and developed UI using JSP, HTML, CSS, jQuery and AJAX"
+          ],
+          "technologies": ["Java", "JSP", "Oracle DB", "HTML", "CSS", "jQuery", "Ajax"]
+        }
+      ]
+    },
+    {
+      "id": "softtek",
+      "company": "Softtek",
+      "location": "Aguascalientes, Mexico",
+      "positions": [
+        {
+          "title": "Java UI Developer",
+          "period": "01/2011 - 12/2012",
+          "highlights": [
+            "Engineered Java applications for GE Treasury optimizing database interactions with Oracle DB",
+            "Improved query performance by 2 seconds per task through indexing, efficient joins, and parallel processing",
+            "Developed UI using JSP, HTML, CSS and jQuery with Java, Servlets, Struts and Spring",
+            "Led team as Technical Project Manager for 1 year coordinating multiple feature launches"
+          ],
+          "technologies": ["Java", "Servlets", "Struts", "Spring", "JSP", "Oracle DB", "HTML", "CSS", "jQuery"]
+        }
+      ]
+    },
+    {
+      "id": "radycal",
+      "company": "Radycal Systems",
+      "location": "Guadalajara, Jalisco, Mexico",
+      "positions": [
+        {
+          "title": "Web Developer",
+          "period": "10/2010 - 12/2011",
+          "highlights": [
+            "Led development for school management in PHP, AJAX, JavaScript and HTML with MySQL",
+            "Created features like add student personal information and attending grade, add teachers and classes they are giving",
+            "Built report of students grades per class"
+          ],
+          "technologies": ["PHP", "MySQL", "Ajax", "JavaScript", "HTML"]
+        }
+      ]
+    },
+    {
+      "id": "nettours",
+      "company": "Nettours",
+      "location": "Guadalajara, Jalisco, Mexico",
+      "positions": [
+        {
+          "title": "Web Developer",
+          "period": "11/2009 - 10/2010",
+          "highlights": [
+            "Developed booking website and workflows for Nettours, enhancing online experience for customers",
+            "Built features using PHP, Ajax, JavaScript, HTML, CSS and MySQL"
+          ],
+          "technologies": ["PHP", "MySQL", "Ajax", "JavaScript", "HTML", "CSS"]
+        }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Chairman's Award",
+      "organization": "American Express",
+      "description": "Employee Outstanding Year Performance",
+      "date": "02/2018"
+    }
+  ]
+}
