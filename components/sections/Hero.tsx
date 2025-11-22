@@ -17,8 +17,8 @@ export const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
-        {/* Greeting */}
-        <div className="mb-6 animate-slide-up">
+        {/* Greeting - Hidden on mobile */}
+        <div className="mb-6 animate-slide-up hidden sm:block">
           <span className="inline-block px-4 py-2 bg-primary-500/10 border border-primary-500/20 rounded-full text-primary-400 text-sm font-semibold">
             👋 Welcome to my portfolio
           </span>
@@ -38,25 +38,25 @@ export const Hero: React.FC = () => {
         </p>
 
         {/* Tagline */}
-        <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8 sm:mb-12 px-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+        <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-6 sm:mb-12 px-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
           {profile.tagline}
         </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col gap-3 justify-center items-center animate-slide-up px-4 max-w-md mx-auto" style={{ animationDelay: '0.4s' }}>
-          <Button href="#experience" variant="primary" size="lg" className="w-full">
+        {/* CTA Buttons - Row on desktop, column on mobile. Only 2 on mobile, 3 on desktop */}
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up px-4 max-w-2xl mx-auto" style={{ animationDelay: '0.4s' }}>
+          <Button href="#experience" variant="primary" size="lg" className="w-full sm:w-auto">
             View Experience
           </Button>
-          <Button href="#projects" variant="outline" size="lg" className="w-full">
+          <Button href="#projects" variant="outline" size="lg" className="w-full sm:w-auto">
             See Projects
           </Button>
-          <Button href={profile.github} variant="secondary" size="lg" external className="w-full">
+          <Button href={profile.github} variant="secondary" size="lg" external className="w-full sm:w-auto hidden sm:inline-flex">
             GitHub Profile
           </Button>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-12 sm:mt-20 animate-fade-in px-4" style={{ animationDelay: '0.5s' }}>
+        {/* Stats - Only 2 on mobile, 4 on desktop */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-8 sm:mt-20 animate-fade-in px-4" style={{ animationDelay: '0.5s' }}>
           <div className="text-center">
             <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">14+</div>
             <div className="text-slate-400 text-xs sm:text-sm">Years Experience</div>
@@ -65,11 +65,11 @@ export const Hero: React.FC = () => {
             <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">1M+</div>
             <div className="text-slate-400 text-xs sm:text-sm">Daily Users Served</div>
           </div>
-          <div className="text-center">
+          <div className="text-center hidden sm:block">
             <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">30+</div>
             <div className="text-slate-400 text-xs sm:text-sm">Components Built</div>
           </div>
-          <div className="text-center">
+          <div className="text-center hidden sm:block">
             <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">10+</div>
             <div className="text-slate-400 text-xs sm:text-sm">Engineers Mentored</div>
           </div>

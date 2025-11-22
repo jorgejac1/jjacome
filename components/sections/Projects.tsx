@@ -9,12 +9,18 @@ import projectsData from '@/data/projects.json';
 export const Projects: React.FC = () => {
   const { projects } = projectsData;
   const [filter, setFilter] = useState<string>('all');
+  const [showAllOnMobile, setShowAllOnMobile] = useState<boolean>(false);
 
   const categories = ['all', ...Array.from(new Set(projects.map(p => p.category)))];
   
   const filteredProjects = filter === 'all' 
     ? projects 
     : projects.filter(p => p.category === filter);
+
+  // Show only 4 projects on mobile initially
+  const displayedProjects = showAllOnMobile 
+    ? filteredProjects 
+    : filteredProjects;
 
   return (
     <Section 
@@ -40,10 +46,18 @@ export const Projects: React.FC = () => {
         ))}
       </div>
 
-      {/* Projects grid */}
+      {/* Projects grid - Desktop shows all, Mobile shows 4 initially */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredProjects.map((project) => (
-          <Card key={project.id} hover className="flex flex-col h-full">
+        {displayedProjects.map((project, index) => (
+          <Card 
+            key={project.id} 
+            hover 
+            className={`flex flex-col h-full ${
+              index >= 4 ? 'hidden md:flex' : ''
+            } ${
+              showAllOnMobile ? '!flex' : ''
+            }`}
+          >
             {/* Project header */}
             <div className="mb-4 flex-1">
               <div className="flex items-start justify-between mb-3">
@@ -118,7 +132,20 @@ export const Projects: React.FC = () => {
         ))}
       </div>
 
-      {/* View all projects */}
+      {/* Show More button for mobile */}
+      {!showAllOnMobile && filteredProjects.length > 4 && (
+        <div className="text-center mt-8 md:hidden">
+          <Button 
+            onClick={() => setShowAllOnMobile(true)}
+            variant="outline" 
+            size="lg"
+          >
+            View All {filteredProjects.length} Projects
+          </Button>
+        </div>
+      )}
+
+      {/* View all projects on GitHub */}
       <div className="text-center mt-12">
         <Button 
           href="https://github.com/jorgejac1?tab=repositories" 

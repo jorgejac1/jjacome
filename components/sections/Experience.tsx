@@ -99,7 +99,7 @@ export const Experience: React.FC = () => {
                       <div className="absolute left-1/2 top-8 w-5 h-5 bg-primary-500 rounded-full border-4 border-slate-900 transform -translate-x-1/2 z-10 shadow-lg shadow-primary-500/50 animate-pulse" />
                     </div>
 
-                    {/* Mobile: Simple stacked layout */}
+                    {/* Mobile: Simple stacked layout with only 3 highlights */}
                     <div className="md:hidden">
                       <Card hover>
                         {/* Header */}
@@ -125,9 +125,9 @@ export const Experience: React.FC = () => {
                           </div>
                         </div>
 
-                        {/* Highlights */}
+                        {/* Highlights - Only first 3 on mobile */}
                         <ul className="space-y-2 mb-4">
-                          {position.highlights.map((highlight, idx) => (
+                          {position.highlights.slice(0, 3).map((highlight, idx) => (
                             <li key={idx} className="flex items-start gap-2 text-slate-300">
                               <span className="text-primary-400 mt-1 flex-shrink-0">▹</span>
                               <span className="text-sm">{highlight}</span>
@@ -135,12 +135,12 @@ export const Experience: React.FC = () => {
                           ))}
                         </ul>
 
-                        {/* Technologies */}
-                        <div className="flex flex-wrap gap-2">
+                        {/* Technologies - Smaller badges on mobile */}
+                        <div className="flex flex-wrap gap-1.5">
                           {position.technologies.map((tech) => (
                             <span
                               key={tech}
-                              className="px-2 py-1 bg-primary-500/10 border border-primary-500/20 rounded-lg text-primary-300 text-xs font-medium"
+                              className="px-2 py-0.5 bg-primary-500/10 border border-primary-500/20 rounded text-primary-300 text-xs font-medium"
                             >
                               {tech}
                             </span>
