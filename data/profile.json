@@ -1,0 +1,36 @@
+{
+  "profile": {
+    "name": "Jorge Jacome",
+    "title": "Lead Software Engineer",
+    "currentCompany": "ESPN",
+    "location": "New York, NY",
+    "email": "jorgejac97@gmail.com",
+    "phone": "(202)-255-4843",
+    "website": "https://jjacome.com",
+    "linkedin": "https://linkedin.com/in/jorge-jacome",
+    "github": "https://github.com/jorgejac1",
+    "summary": "As an experienced Front-End Developer, I specialize in creating and maintaining interactive web applications using modern technologies like React.js, JavaScript, and HTML/CSS. My strong understanding of optimization techniques and user experience principles allows me to enhance website performance, reduce page load times, and drive a positive impact on company results.",
+    "tagline": "Building scalable, high-performance web applications for millions of users",
+    "bio": "Lead Software Engineer at ESPN with 14+ years of experience building enterprise-scale applications. Previously at American Express, where I developed features for 1M+ daily users and led multiple engineering teams. Passionate about performance optimization, mentoring developers, and delivering exceptional user experiences.",
+    "highlights": [
+      "Led development for ESPN.com sportsbook features",
+      "Built React components serving 1M+ daily users at American Express",
+      "Improved dashboard load time by 4 seconds through optimization",
+      "Mentored 10+ engineers resulting in multiple promotions",
+      "Reduced production errors by 30% through testing and best practices"
+    ]
+  },
+  "education": {
+    "degree": "Bachelor's Degree",
+    "field": "Systems Engineering",
+    "institution": "ITESO - Instituto Tecnologico de Estudios Superiores y de Occidente",
+    "location": "Guadalajara, Mexico",
+    "period": "2004 - 2010"
+  },
+  "social": {
+    "github": "https://github.com/jorgejac1",
+    "linkedin": "https://linkedin.com/in/jorge-jacome",
+    "twitter": "https://twitter.com/jorgejac1",
+    "email": "jorgejac97@gmail.com"
+  }
+}
