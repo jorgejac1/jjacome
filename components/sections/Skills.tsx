@@ -70,6 +70,8 @@ export const Skills: React.FC = () => {
               <button
                 onClick={() => toggleCategory(category.id)}
                 className="w-full flex items-center justify-between gap-3 py-1"
+                aria-expanded={isExpanded}
+                aria-label={`${isExpanded ? 'Collapse' : 'Expand'} ${category.name}`}
               >
                 <div className="flex items-center gap-3">
                   <span className="text-3xl">{iconMap[category.icon]}</span>

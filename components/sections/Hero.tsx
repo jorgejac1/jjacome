@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { Button } from '../ui/Button';
 import profileData from '@/data/profile.json';
@@ -11,7 +9,7 @@ export const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
+        <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(circle, rgba(100,116,139,0.3) 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       </div>
@@ -26,7 +24,7 @@ export const Hero: React.FC = () => {
 
         {/* Name */}
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-          <span className="text-white">Hi, I'm </span>
+          <span className="text-white">Hi, I&apos;m </span>
           <span className="bg-gradient-to-r from-primary-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
             {profile.name}
           </span>
@@ -58,7 +56,7 @@ export const Hero: React.FC = () => {
         {/* Stats - Only 2 on mobile, 4 on desktop */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 mt-8 sm:mt-20 animate-fade-in px-4" style={{ animationDelay: '0.5s' }}>
           <div className="text-center">
-            <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">14+</div>
+            <div className="text-3xl sm:text-4xl font-bold text-white mb-1 sm:mb-2">15+</div>
             <div className="text-slate-400 text-xs sm:text-sm">Years Experience</div>
           </div>
           <div className="text-center">

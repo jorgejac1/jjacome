@@ -17,10 +17,8 @@ export const Projects: React.FC = () => {
     ? projects 
     : projects.filter(p => p.category === filter);
 
-  // Show only 4 projects on mobile initially
-  const displayedProjects = showAllOnMobile 
-    ? filteredProjects 
-    : filteredProjects;
+  // Show only first 4 projects on mobile initially
+  const displayedProjects = filteredProjects;
 
   return (
     <Section 

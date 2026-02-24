@@ -1,19 +1,37 @@
 {
   "experiences": [
     {
+      "id": "oracle",
+      "company": "Oracle",
+      "location": "Remote",
+      "positions": [
+        {
+          "title": "Principal Technical Member of Staff Engineer",
+          "period": "02/2026 - Present",
+          "current": true,
+          "highlights": [
+            "Leading team implementing UI modernization for Oracle Health's Cerner application",
+            "Driving automation initiatives to improve development workflows and deployment efficiency",
+            "Architecting application improvements to enhance performance and user experience",
+            "Mentoring engineers on best practices, modern patterns, and technical growth"
+          ],
+          "technologies": ["React", "TypeScript", "Node.js", "Oracle Health", "Cerner"]
+        }
+      ]
+    },
+    {
       "id": "espn",
       "company": "ESPN",
       "location": "New York, NY",
       "positions": [
         {
           "title": "Lead Software Engineer",
-          "period": "08/2024 - Present",
-          "current": true,
+          "period": "08/2024 - 02/2026",
           "highlights": [
-            "Lead team to develop multiple features in ESPN.com that drives users to place bets as part of the sportsbook project",
-            "Architecting features using ReactJS, TypeScript, NodeJS connected to ESPN BET and Penn backend services",
-            "Lead engineers to release features and implement application optimizations reducing bundle time",
-            "Driving performance improvements across the platform"
+            "Led team to develop multiple features in ESPN.com that drives users to place bets as part of the sportsbook project",
+            "Architected features using ReactJS, TypeScript, NodeJS connected to ESPN BET and Penn backend services",
+            "Led engineers to release features and implement application optimizations reducing bundle time",
+            "Drove performance improvements across the platform"
           ],
           "technologies": ["React", "TypeScript", "Node.js", "ESPN BET API"]
         }

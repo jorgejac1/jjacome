@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { Card } from '../ui/Card';
 import { Section } from '../ui/Section';
@@ -62,10 +60,10 @@ export const Contact: React.FC = () => {
         <Card className="text-center bg-gradient-to-br from-primary-900/20 to-blue-900/20 border-primary-500/30">
           <div className="mb-8">
             <h3 className="text-2xl font-bold text-white mb-4">
-              Let's build something great
+              Let&apos;s build something great
             </h3>
             <p className="text-slate-300 text-lg max-w-2xl mx-auto">
-              Whether you have an interesting project, want to discuss technology, or just connect with fellow engineers — I'm always happy to chat.
+              Whether you have an interesting project, want to discuss technology, or just connect with fellow engineers — I&apos;m always happy to chat.
             </p>
           </div>
 

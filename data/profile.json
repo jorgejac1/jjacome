@@ -1,23 +1,23 @@
 {
   "profile": {
     "name": "Jorge Jacome",
-    "title": "Lead Software Engineer",
-    "currentCompany": "ESPN",
-    "location": "New York, NY",
+    "title": "Principal Technical Member of Staff Engineer",
+    "currentCompany": "Oracle",
+    "location": "New Jersey, USA",
     "email": "jorgejac97@gmail.com",
     "phone": "(202)-255-4843",
     "website": "https://jjacome.com",
     "linkedin": "https://linkedin.com/in/jorge-jacome",
     "github": "https://github.com/jorgejac1",
-    "summary": "As an experienced Front-End Developer, I specialize in creating and maintaining interactive web applications using modern technologies like React.js, JavaScript, and HTML/CSS. My strong understanding of optimization techniques and user experience principles allows me to enhance website performance, reduce page load times, and drive a positive impact on company results.",
-    "tagline": "Building scalable, high-performance web applications for millions of users",
-    "bio": "Lead Software Engineer at ESPN with 14+ years of experience building enterprise-scale applications. Previously at American Express, where I developed features for 1M+ daily users and led multiple engineering teams. Passionate about performance optimization, mentoring developers, and delivering exceptional user experiences.",
+    "summary": "As an experienced Software Engineer, I specialize in creating and maintaining interactive web applications using modern technologies like React.js, TypeScript, and Next.js. My strong understanding of optimization techniques, UI modernization, and team leadership allows me to enhance application performance, drive automation, and deliver a positive impact on company results.",
+    "tagline": "Building scalable, high-performance health and enterprise applications for millions of users",
+    "bio": "Principal Technical Member of Staff Engineer at Oracle Health (Cerner) with 15+ years of experience building enterprise-scale applications. Previously at ESPN and American Express, where I developed features for 1M+ daily users and led multiple engineering teams. Passionate about modernization, automation, mentoring developers, and delivering exceptional user experiences.",
     "highlights": [
+      "Leading UI modernization and automation at Oracle Health (Cerner)",
       "Led development for ESPN.com sportsbook features",
       "Built React components serving 1M+ daily users at American Express",
       "Improved dashboard load time by 4 seconds through optimization",
-      "Mentored 10+ engineers resulting in multiple promotions",
-      "Reduced production errors by 30% through testing and best practices"
+      "Mentored 10+ engineers resulting in multiple promotions"
     ]
   },
   "education": {

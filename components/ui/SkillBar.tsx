@@ -12,7 +12,7 @@ export const SkillBar: React.FC<SkillBarProps> = ({ name, level, yearsOfExperien
       <div className="flex justify-between items-center mb-2">
         <span className="text-slate-200 font-medium">{name}</span>
         <div className="flex items-center gap-3">
-          {yearsOfExperience && (
+          {yearsOfExperience != null && (
             <span className="text-xs text-slate-400">{yearsOfExperience} yrs</span>
           )}
           <span className="text-primary-400 font-semibold">{level}%</span>

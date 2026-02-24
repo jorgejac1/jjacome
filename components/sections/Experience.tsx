@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { Card } from '../ui/Card';
 import { Section } from '../ui/Section';
@@ -18,7 +16,7 @@ export const Experience: React.FC = () => {
       {/* Download Resume Button */}
       <div className="flex justify-center mb-12">
         <a
-          href="/resume.docx"
+          href="/ResumeJorge.docx"
           download
           className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary-500 to-blue-600 text-white font-semibold rounded-xl hover:from-primary-600 hover:to-blue-700 transition-all hover:scale-105 shadow-lg shadow-primary-500/30 hover:shadow-primary-500/50"
         >
