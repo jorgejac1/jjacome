@@ -20,7 +20,7 @@ export function ProjectShowcase({ projects }: {
         x: number;
         y: number;
     } | null>(null);
-    const suppressClick = useRef(false);
+    const suppressClickUntil = useRef(0);
     const project = projects[selected];
     function onKeyDown(event: KeyboardEvent<HTMLButtonElement>, focusedIndex: number) {
         let next = focusedIndex;
@@ -43,14 +43,14 @@ export function ProjectShowcase({ projects }: {
       <div className="project-tabs" role="group" aria-label="Choose a project">
         {projects.map((item, index) => <button key={item.id} ref={element => { buttons.current[index] = element; }} type="button" aria-pressed={index === selected} aria-controls="project-preview" onClick={() => setSelected(index)} onKeyDown={event => onKeyDown(event, index)}>{item.name}</button>)}
       </div>
-      <div id="project-preview" onClickCapture={event => { if (suppressClick.current) { event.preventDefault(); suppressClick.current = false; } }} onTouchCancel={() => { touch.current = null; }} onTouchStart={event => { suppressClick.current = false; touch.current = event.touches.length === 1 ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null; }} onTouchEnd={event => {
+      <div id="project-preview" onClickCapture={event => { if (event.detail > 0 && Date.now() < suppressClickUntil.current) event.preventDefault(); suppressClickUntil.current = 0; }} onTouchCancel={() => { touch.current = null; }} onTouchStart={event => { suppressClickUntil.current = 0; touch.current = event.touches.length === 1 ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null; }} onTouchEnd={event => {
             if (!touch.current)
                 return;
             const dx = event.changedTouches[0].clientX - touch.current.x;
             const dy = event.changedTouches[0].clientY - touch.current.y;
             if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
                 setSelected(current => (current + (dx < 0 ? 1 : -1) + projects.length) % projects.length);
-                suppressClick.current = true;
+                suppressClickUntil.current = Date.now() + 500;
             }
             touch.current = null;
         }}>
