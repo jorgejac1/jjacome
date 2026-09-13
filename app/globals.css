@@ -17,3 +17,19 @@ code{font-family:var(--font-mono);font-size:.85em;overflow-wrap:anywhere;color:v
 /* Readable evidence and a tighter mobile opening. */
 .evidence,.figure-caption{font-size:13px;line-height:1.65}
 @media(max-width:760px){.hero{padding:28px 0 32px;gap:26px}.hero-intro{font-size:16px;line-height:1.6}.hero .actions{margin-top:22px}.hero .current-role{margin-top:18px}.nav-links{flex-wrap:wrap;gap:10px 16px}.nav-links>a{padding-top:6px;padding-bottom:6px}.hero h1{margin-top:16px;margin-bottom:20px}}
+
+/* Studio atmosphere: one entrance, then motion only on interaction. */
+.hero{position:relative;isolation:isolate}
+.hero::before,.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero::before{background:radial-gradient(ellipse at 77% 35%,#8cca4930,transparent 59%),radial-gradient(ellipse at 12% 82%,#438a6520,transparent 55%)}
+.hero::after{background-image:linear-gradient(#b9ec8610 1px,transparent 1px),linear-gradient(90deg,#b9ec8610 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at 80% 30%,#0008,transparent 70%)}
+.showcase{--project-accent:#b9ec86;border-top:2px solid var(--project-accent);box-shadow:0 24px 80px #0005,0 0 50px #91be5e0a;transition:border-color .35s ease,box-shadow .35s ease}
+.showcase[data-project=conductor]{--project-accent:#9fc7ed}.showcase[data-project=evalgate]{--project-accent:#d2b5ed}
+.showcase .project-tabs button[aria-pressed=true]{color:var(--project-accent);box-shadow:inset 0 -2px var(--project-accent)}
+.project-tabs button{transition:color .2s ease,background-color .2s ease}
+@keyframes studio-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes studio-project{from{opacity:.3;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.hero>div:first-child{animation:studio-arrive .65s ease both}.hero>.showcase{animation:studio-arrive .8s ease both}
+.showcase-image img,.showcase-copy.is-active{animation:studio-project .32s ease both}
+@media(prefers-reduced-motion:reduce){.hero *,.hero::before,.hero::after{animation:none!important;transition:none!important}}
+@media print{.hero::before,.hero::after{display:none}}

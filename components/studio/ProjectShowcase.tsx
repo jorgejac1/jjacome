@@ -38,7 +38,7 @@ export function ProjectShowcase({ projects }: {
         setSelected(next);
         buttons.current[next]?.focus();
     }
-    return (<section className="showcase" aria-label="Selected project preview">
+    return (<section className="showcase" data-project={project.id} aria-label="Selected project preview">
       <div className="showcase-top"><span className="eyebrow">Independent engineering</span><span className="mono" aria-hidden="true">0{selected + 1} / 0{projects.length}</span></div>
       <div className="project-tabs" role="group" aria-label="Choose a project">
         {projects.map((item, index) => <button key={item.id} ref={element => { buttons.current[index] = element; }} type="button" aria-pressed={index === selected} aria-controls="project-preview" onClick={() => setSelected(index)} onKeyDown={event => onKeyDown(event, index)}>{item.name}</button>)}
@@ -55,9 +55,9 @@ export function ProjectShowcase({ projects }: {
             touch.current = null;
         }}>
         <Link className={`showcase-image project-image-${project.id}`} href={`/work/${project.id}`} aria-label={`Read the ${project.name} engineering story`}>
-          <Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 900px) 90vw, 43vw" priority={selected === 0}/>
+          <Image key={project.id} src={project.image} alt={project.imageAlt} fill sizes="(max-width: 900px) 90vw, 43vw" priority={selected === 0}/>
         </Link>
-        <div className="showcase-copy-stack">{projects.map((item, index) => <div key={item.id} className="showcase-copy" style={{ visibility: index === selected ? "visible" : "hidden" }} aria-hidden={index !== selected} inert={index !== selected}><p className="evidence">{item.evidenceLabel}</p><h2><Link href={`/work/${item.id}`}>{item.name}<span aria-hidden="true"> ↗</span></Link></h2><p>{item.previewExplanation}</p></div>)}</div>
+        <div className="showcase-copy-stack">{projects.map((item, index) => <div key={item.id} className={`showcase-copy ${index === selected ? "is-active" : ""}`} style={{ visibility: index === selected ? "visible" : "hidden" }} aria-hidden={index !== selected} inert={index !== selected}><p className="evidence">{item.evidenceLabel}</p><h2><Link href={`/work/${item.id}`}>{item.name}<span aria-hidden="true"> ↗</span></Link></h2><p>{item.previewExplanation}</p></div>)}</div>
       </div>
       <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{project.name}, project {selected + 1} of {projects.length}</p>
     </section>);
