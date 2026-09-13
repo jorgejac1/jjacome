@@ -11,7 +11,13 @@ class Page(HTMLParser):
   d=dict(a)
   if 'id' in d:self.ids.add(d['id'])
   if t=='a' and 'href' in d:self.links.append(d['href'])
-  if t=='img' and 'src' in d:self.images.append((d['src'],d.get('alt')))
+  if t=='img':
+   if 'src' in d:self.images.append((d['src'],d.get('alt')))
+   # Validate every generated responsive variant, not just the fallback src.
+   # This also prepares the local image cache before co-located lab testing.
+   for candidate in d.get('srcset','').split(','):
+    parts=candidate.strip().split()
+    if parts:self.images.append((parts[0],d.get('alt')))
 cache={};issues=[]
 def get(url):
  if url not in cache:
