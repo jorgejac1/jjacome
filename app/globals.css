@@ -27,7 +27,7 @@ code{font-family:var(--font-mono);font-size:.85em;overflow-wrap:anywhere;color:v
 .showcase[data-project=conductor]{--project-accent:#9fc7ed}.showcase[data-project=evalgate]{--project-accent:#d2b5ed}
 .showcase .project-tabs button[aria-pressed=true]{color:var(--project-accent);box-shadow:inset 0 -2px var(--project-accent)}
 .project-tabs button{transition:color .2s ease,background-color .2s ease}
-@keyframes studio-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes studio-arrive{from{transform:translateY(12px)}to{transform:translateY(0)}}
 @keyframes studio-project{from{opacity:.3;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
 .hero>div:first-child{animation:studio-arrive .65s ease both}.hero>.showcase{animation:studio-arrive .8s ease both}
 .showcase-image img,.showcase-copy.is-active{animation:studio-project .32s ease both}
