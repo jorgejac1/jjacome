@@ -25,3 +25,28 @@ test('resume compatibility and real missing-page status',async({request})=>{
  for(const path of ['/resume.pdf','/es/resume.pdf']){const r=await request.get(path);expect(r.status()).toBe(200);expect(r.headers()['content-type']).toContain('application/pdf');}
  for(const path of ['/missing-page','/es/missing-page'])expect((await request.get(path)).status()).toBe(404);
 });
+
+for (const locale of ['en', 'es']) {
+ test(`${locale} compact phone header keeps language beside identity`, async ({page}) => {
+  for (const width of [320, 360, 384, 412, 480, 760]) {
+   await page.setViewportSize({width, height:915});
+   await page.goto(locale === 'es' ? '/es' : '/');
+   const brand = await page.locator('header .wordmark').boundingBox();
+   const language = await page.locator('header .language-switch').boundingBox();
+   expect(brand).not.toBeNull(); expect(language).not.toBeNull();
+   expect(Math.abs((brand!.y + brand!.height / 2) - (language!.y + language!.height / 2))).toBeLessThan(2);
+   expect(brand!.x + brand!.width).toBeLessThan(language!.x);
+   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+ });
+}
+test('scroll entrance respects reduced motion', async ({page}) => {
+ await page.emulateMedia({reducedMotion:'no-preference'});
+ await page.goto('/');
+ const target = page.locator('main > .contact');
+ await target.scrollIntoViewIfNeeded();
+ await expect.poll(() => target.evaluate(el => el.getAnimations().length)).toBeGreaterThan(0);
+ await page.emulateMedia({reducedMotion:'reduce'});
+ await expect.poll(() => target.evaluate(el => el.getAnimations().length)).toBe(0);
+ await expect(target).toHaveCSS('opacity','1');
+});
