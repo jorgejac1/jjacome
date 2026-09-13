@@ -1,0 +1,590 @@
+{
+  "version": "2026-09-13.2",
+  "identity": {
+    "name": "Jorge Jacome",
+    "targetRole": "Staff / Principal Frontend Engineer",
+    "currentRole": "Principal Member of Technical Staff",
+    "currentCompany": "Oracle",
+    "headline": "Frontend platforms. Applied AI. Engineering leadership.",
+    "intro": "I’m Jorge. I build frontend platforms with React, Next.js, TypeScript and JavaScript, develop applied AI systems, and help engineers turn sound practices into working software.",
+    "summary": "15+ years in frontend and platform engineering, with experience at Oracle, ESPN / Disney and American Express.",
+    "portrait": "/assets/jorge-portrait.jpg",
+    "portraitAlt": "Jorge Jacome smiling in a black-and-white portrait"
+  },
+  "roles": [
+    {
+      "id": "oracle",
+      "company": "Oracle",
+      "positions": [
+        {
+          "title": "Principal Member of Technical Staff",
+          "period": "01/2026 – Present",
+          "current": true,
+          "highlights": [
+            "Provide technical direction, mentoring, code review and cross-team delivery for Oracle’s EHR Messaging Center.",
+            "Authored an AI engineering playbook and delivered Codex training for coding, testing and documentation.",
+            "Developed and delivered practical AI training covering AI fundamentals, prompt design, API integration, agent workflows and engineering best practices.",
+            "Re-architected E2E test automation using AI-assisted development."
+          ],
+          "technologies": [
+            "React",
+            "TypeScript",
+            "E2E automation",
+            "Codex",
+            "Agent workflows"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espn",
+      "company": "ESPN / Disney",
+      "positions": [
+        {
+          "title": "Lead Software Engineer",
+          "period": "08/2024 – 01/2026",
+          "highlights": [
+            "Led sportsbook feature delivery using React, TypeScript and Node.js with Product, Design and engineering partners.",
+            "Contributed component injection, routes, context providers and React Server Components rendering to the shared web platform.",
+            "Built and maintained reusable platform libraries and contributed performance improvements.",
+            "Mentored engineers on modern React, TypeScript and testing practices."
+          ],
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Node.js",
+            "ESPN BET API"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amex",
+      "company": "American Express",
+      "positions": [
+        {
+          "title": "Senior Engineer II",
+          "period": "12/2018 – 07/2024",
+          "highlights": [
+            "Developed 30+ customer-facing React components across cardmember dashboard and savings/checking products.",
+            "Reduced dashboard load time by four seconds through SSR and frontend optimization.",
+            "Mentored 10+ engineers through feedback, technical guidance and growth conversations.",
+            "Led feature delivery and partnered with Product and Design on scope, planning and release coordination."
+          ],
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Redux",
+            "Node.js",
+            "Jest",
+            "React Testing Library",
+            "SWR",
+            "Jenkins",
+            "Splunk",
+            "GraphQL"
+          ]
+        },
+        {
+          "title": "Engineer I",
+          "period": "09/2017 – 12/2018",
+          "highlights": [
+            "Built and maintained React interfaces and reusable components for cardmember experiences.",
+            "Contributed testing, delivery coordination and production maintenance."
+          ],
+          "technologies": [
+            "React",
+            "JavaScript",
+            "Redux",
+            "GraphQL",
+            "Jest",
+            "Mocha",
+            "Chai",
+            "Docker",
+            "Jenkins"
+          ]
+        },
+        {
+          "title": "Engineer II",
+          "period": "09/2015 – 09/2017",
+          "highlights": [
+            "Contributed to the cardmember platform migration and customer-facing frontend features.",
+            "Worked on dashboard rendering, API integration and production support."
+          ],
+          "technologies": [
+            "React",
+            "Node.js",
+            "Redux",
+            "Jest",
+            "SSR",
+            "Jenkins",
+            "Splunk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "igate",
+      "company": "iGATE",
+      "positions": [
+        {
+          "title": "Java UI Developer",
+          "period": "11/2014 – 09/2015",
+          "highlights": [
+            "Created internal websites for company vendors providing product and service information.",
+            "Developed map application using Java, JSF, Servlets integrated with Google Maps API.",
+            "Built Chub ecosystem providing vendors with client and company location mapping."
+          ],
+          "technologies": [
+            "Java",
+            "JSF",
+            "Servlets",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "Ajax",
+            "Google Maps API"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "systems-usa",
+      "company": "Systems USA",
+      "positions": [
+        {
+          "title": "Java UI Developer",
+          "period": "01/2013 – 10/2014",
+          "highlights": [
+            "Led frontend development for the Virginia Case Management System as a Deloitte consultant.",
+            "Built eligibility interfaces with JSP, HTML, CSS, jQuery and AJAX backed by Java and Oracle DB."
+          ],
+          "technologies": [
+            "Java",
+            "JSP",
+            "Oracle DB",
+            "HTML",
+            "CSS",
+            "jQuery",
+            "Ajax"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "softtek",
+      "company": "Softtek",
+      "positions": [
+        {
+          "title": "Java UI Developer",
+          "period": "01/2011 – 12/2012",
+          "highlights": [
+            "Developed Java applications and web interfaces for GE Treasury.",
+            "Optimized Oracle database interactions and coordinated feature delivery as technical project manager."
+          ],
+          "technologies": [
+            "Java",
+            "Servlets",
+            "Struts",
+            "Spring",
+            "JSP",
+            "Oracle DB",
+            "HTML",
+            "CSS",
+            "jQuery"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radycal",
+      "company": "Radycal Systems",
+      "positions": [
+        {
+          "title": "Web Developer",
+          "period": "10/2010 – 12/2011",
+          "highlights": [
+            "Led development of a school management platform using PHP, AJAX, JavaScript, HTML and MySQL.",
+            "Built student, teacher and class management features.",
+            "Created student grade reports by class."
+          ],
+          "technologies": [
+            "PHP",
+            "MySQL",
+            "Ajax",
+            "JavaScript",
+            "HTML"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nettours",
+      "company": "Nettours",
+      "positions": [
+        {
+          "title": "Web Developer",
+          "period": "11/2009 – 10/2010",
+          "highlights": [
+            "Developed booking website and workflows for Nettours, enhancing online experience for customers.",
+            "Built features using PHP, Ajax, JavaScript, HTML, CSS and MySQL."
+          ],
+          "technologies": [
+            "PHP",
+            "MySQL",
+            "Ajax",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "allylab",
+      "name": "AllyLab",
+      "discipline": "Frontend + AI",
+      "summary": "An accessibility review workflow across a React dashboard, API and CLI, with a companion Next.js website.",
+      "contribution": "I built AllyLab’s accessibility review workflow across a React dashboard, API and CLI, and its companion Next.js website. The interface connects automated findings with AI-assisted suggestions and human review.",
+      "outcome": "The implementation includes selection, filtering and finding-detail tests, plus rescan utilities that check whether rule IDs remain. The result connects a reported issue to a reviewable change.",
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Accessibility",
+        "LLM APIs"
+      ],
+      "image": "/assets/allylab-focus.png",
+      "fullImage": "/assets/allylab-findings.png",
+      "imageAlt": "AllyLab findings table with severity, recurring status and four synthetic accessibility findings",
+      "evidenceLabel": "Real application · guided still sequence · synthetic findings and metrics · no API or model calls.",
+      "github": "https://github.com/jorgejac1/allylab",
+      "story": {
+        "id": "allylab",
+        "name": "AllyLab",
+        "discipline": "Frontend + AI",
+        "title": "From findings to reviewable fixes.",
+        "summary": "An accessibility review workflow across a React dashboard, API and CLI, with a companion Next.js website.",
+        "tags": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Accessibility",
+          "LLM APIs"
+        ],
+        "image": "allylab-focus.png",
+        "fullImage": "allylab-findings.png",
+        "alt": "AllyLab findings table with severity, recurring status and four synthetic accessibility findings",
+        "problemTitle": "A finding needs a next step.",
+        "problem": "An accessibility finding is only the beginning. Engineers need to understand its severity, track its status, inspect a suggested change and verify what remains.",
+        "contributionTitle": "Connect the finding to engineering work.",
+        "contribution": "I built AllyLab’s accessibility review workflow across a React dashboard, API and CLI, and its companion Next.js website. The interface connects automated findings with AI-assisted suggestions and human review.",
+        "decisionTitle": "Separate urgency, lifecycle and loading cost.",
+        "decision": "Severity and issue status remain separate because urgency and lifecycle answer different questions. Reporting views load on demand, with chart and export code separated from the initial loading path.",
+        "tradeoff": "Deferred screens need explicit loading states. Structured suggestions remain proposals for human review. No bundle-size or load-time improvement is claimed here.",
+        "flow": [
+          {
+            "title": "Finding",
+            "body": "Scan output identifies the rule, severity and affected interface."
+          },
+          {
+            "title": "Suggested change",
+            "body": "Structured AI-assisted suggestions connect proposed code to the finding."
+          },
+          {
+            "title": "Review + rescan",
+            "body": "Inspect the change and check whether the rule remains."
+          }
+        ],
+        "steps": [
+          {
+            "title": "Review findings",
+            "body": "Four synthetic findings keep severity and lifecycle status separate. These sample findings illustrate interface states, not accessibility results for a real customer.",
+            "image": "allylab-01-findings.png",
+            "alt": "Real AllyLab findings table with four synthetic issues and separate severity and status columns"
+          },
+          {
+            "title": "Filter by severity",
+            "body": "Selecting Critical narrows the table to the missing-alt finding. The score and scan time visible in this fixture are synthetic, not measured performance.",
+            "image": "allylab-02-filter.png",
+            "alt": "Critical filter selected in AllyLab with one missing-alt finding visible"
+          },
+          {
+            "title": "Inspect the finding",
+            "body": "The detail panel exposes the rule, selector and source element. The fixture has no element screenshot, so the real interface shows its empty state. Generate AI Fix was not activated.",
+            "image": "allylab-03-detail.png",
+            "alt": "AllyLab finding detail panel with rule, CSS selector, HTML element and an explicit missing screenshot state"
+          }
+        ],
+        "captureBoundary": "Real application · guided still sequence · synthetic findings and metrics · no API or model calls.",
+        "outcomeTitle": "An inspectable review workflow.",
+        "outcome": "The implementation includes selection, filtering and finding-detail tests, plus rescan utilities that check whether rule IDs remain. The result connects a reported issue to a reviewable change.",
+        "limits": "A suggested fix still needs review. Automated checks and rescanning do not certify accessibility or establish a measured accessibility outcome.",
+        "source": "https://github.com/jorgejac1/allylab"
+      }
+    },
+    {
+      "id": "conductor",
+      "name": "Conductor",
+      "discipline": "Agent coordination",
+      "summary": "Tracks, dependencies and task-specific context make parallel agent work easier to inspect before execution.",
+      "contribution": "I built Conductor to organize agent work into tracks with dependencies and task-specific Markdown context. Its planning interface makes those relationships visible before execution.",
+      "outcome": "The implementation validates declared dependencies, detects cycles and schedules using dependsOn. The captured interface makes the relationship between two prerequisites and a review track readable.",
+      "technologies": [
+        "TypeScript",
+        "Dependency graphs",
+        "Agent orchestration",
+        "Markdown context"
+      ],
+      "image": "/assets/conductor-focus.png",
+      "fullImage": "/assets/conductor-full.png",
+      "imageAlt": "Conductor graph showing Review interface dependent on Component system and Retrieval API",
+      "evidenceLabel": "Real local planning interface · three synthetic tracks · no workers executed.",
+      "github": "https://github.com/jorgejac1/conductor-agents",
+      "story": {
+        "id": "conductor",
+        "name": "Conductor",
+        "discipline": "Agent coordination",
+        "title": "Make the dependencies visible.",
+        "summary": "Tracks, dependencies and task-specific context make parallel agent work easier to inspect before execution.",
+        "tags": [
+          "TypeScript",
+          "Dependency graphs",
+          "Agent orchestration",
+          "Markdown context"
+        ],
+        "image": "conductor-focus.png",
+        "fullImage": "conductor-full.png",
+        "alt": "Conductor graph showing Review interface dependent on Component system and Retrieval API",
+        "problemTitle": "Parallel work still needs an order.",
+        "problem": "Agent work needs an explicit plan: which tasks can start, which depend on another track, and what context belongs to each task.",
+        "contributionTitle": "Give each track its own context.",
+        "contribution": "I built Conductor to organize agent work into tracks with dependencies and task-specific Markdown context. Its planning interface makes those relationships visible before execution.",
+        "decisionTitle": "Make ordering an explicit graph.",
+        "decision": "A track carries its own context and dependencies instead of relying on one undifferentiated conversation. The scheduler checks the dependency graph before starting work, including dependency-cycle detection.",
+        "tradeoff": "The plan is only as useful as the dependencies and context supplied to it. Describing scope in context is not proof of permission enforcement.",
+        "flow": [
+          {
+            "title": "Define tracks",
+            "body": "Give each task a goal, context and declared dependencies."
+          },
+          {
+            "title": "Resolve dependencies",
+            "body": "Validate the graph and detect cycles before scheduling."
+          },
+          {
+            "title": "Schedule eligible work",
+            "body": "Start work according to dependency readiness."
+          }
+        ],
+        "steps": [
+          {
+            "title": "Prerequisites",
+            "body": "Component system and Retrieval API are separate prerequisite tracks in this synthetic example."
+          },
+          {
+            "title": "Dependency",
+            "body": "Review interface depends on both prerequisites. The graph makes that relationship inspectable."
+          },
+          {
+            "title": "Execution boundary",
+            "body": "This capture shows planning only. No agent workers executed, so the graph is not evidence of successful delivery."
+          }
+        ],
+        "captureBoundary": "Real local planning interface · three synthetic tracks · no workers executed.",
+        "outcomeTitle": "Ordering that can be inspected.",
+        "outcome": "The implementation validates declared dependencies, detects cycles and schedules using dependsOn. The captured interface makes the relationship between two prerequisites and a review track readable.",
+        "limits": "This demonstrates planning, not agent delivery, reliability metrics or employer adoption.",
+        "source": "https://github.com/jorgejac1/conductor-agents"
+      }
+    },
+    {
+      "id": "evalgate",
+      "name": "Evalgate",
+      "discipline": "Executable verification",
+      "summary": "Markdown work contracts connect acceptance criteria to executable checks and visible results.",
+      "contribution": "I built Evalgate to connect Markdown work contracts to executable checks, record their results, and leave failed checks unresolved for inspection and an explicit retry.",
+      "outcome": "The CLI parses pending contracts, runs their verifiers, prints failure output and updates the Markdown using the results. In the sample run, the failed source-evidence contract remains pending.",
+      "technologies": [
+        "TypeScript",
+        "CLI",
+        "Executable checks",
+        "Agent verification"
+      ],
+      "image": "/assets/evalgate-focus.png",
+      "fullImage": "/assets/evalgate-full.png",
+      "imageAlt": "Evalgate contract cards showing two passed checks and a missing-evidence check remaining pending",
+      "evidenceLabel": "Real local sample execution · two passed · one deliberate failure · synthetic checks.",
+      "github": "https://github.com/jorgejac1/evalgate",
+      "story": {
+        "id": "evalgate",
+        "name": "Evalgate",
+        "discipline": "Executable verification",
+        "title": "Keep the failure evidence.",
+        "summary": "Markdown work contracts connect acceptance criteria to executable checks and visible results.",
+        "tags": [
+          "TypeScript",
+          "CLI",
+          "Executable checks",
+          "Agent verification"
+        ],
+        "image": "evalgate-focus.png",
+        "fullImage": "evalgate-full.png",
+        "alt": "Evalgate contract cards showing two passed checks and a missing-evidence check remaining pending",
+        "problemTitle": "Saying done is not evidence.",
+        "problem": "An agent reporting completion does not establish that a task met its acceptance criteria. The result needs an inspectable check.",
+        "contributionTitle": "Connect the contract to the check.",
+        "contribution": "I built Evalgate to connect Markdown work contracts to executable checks, record their results, and leave failed checks unresolved for inspection and an explicit retry.",
+        "decisionTitle": "Let the verifier update completion.",
+        "decision": "Define a verifier alongside the task and use its result to update completion. Shell and HTTP checks test explicit conditions; model-based judgment carries different uncertainty.",
+        "tradeoff": "A passing check proves only the property it tested. Retries are explicit and the declared retry count is advisory. JSON checks cover a limited shape; file-pattern checks are not a semantic-diff engine.",
+        "flow": [
+          {
+            "title": "Define acceptance",
+            "body": "Write the task and the executable property to verify."
+          },
+          {
+            "title": "Run verifier",
+            "body": "Evaluate the condition and retain its output."
+          },
+          {
+            "title": "Accept or retain failure",
+            "body": "Update passing contracts; leave failures unresolved for inspection."
+          }
+        ],
+        "steps": [
+          {
+            "title": "Passed checks",
+            "body": "Two synthetic checks passed in the real local sample run. These are illustrative results, not a performance benchmark."
+          },
+          {
+            "title": "Missing evidence",
+            "body": "The deliberately missing source-evidence check failed. Its contract stays pending instead of claiming completion."
+          },
+          {
+            "title": "Review and retry",
+            "body": "Read the failure output before an explicit retry. A plausible answer does not replace missing evidence."
+          }
+        ],
+        "captureBoundary": "Real local sample execution · two passed · one deliberate failure · synthetic checks.",
+        "outcomeTitle": "Completion follows the evidence.",
+        "outcome": "The CLI parses pending contracts, runs their verifiers, prints failure output and updates the Markdown using the results. In the sample run, the failed source-evidence contract remains pending.",
+        "limits": "Sample results are demonstration evidence, not product performance metrics. Passing checks do not prove unchecked properties.",
+        "source": "https://github.com/jorgejac1/evalgate"
+      }
+    }
+  ],
+  "enterpriseStory": {
+    "id": "espn-platform",
+    "company": "ESPN / Disney",
+    "title": "Product delivery, supported by a shared frontend platform.",
+    "problem": "ESPN’s sportsbook experience needed product features alongside reusable capabilities in a shared web platform.",
+    "constraints": "Product delivery and shared-platform changes involved engineering, Product, Design and brand-team collaborators.",
+    "contribution": "As Lead Software Engineer, I led sportsbook feature delivery and contributed TypeScript component injection, routes, context providers, React Server Components rendering and reusable libraries to the shared platform.",
+    "decision": "Build reusable platform capabilities alongside product-specific flows, so common rendering and integration work can support brand experiences.",
+    "tradeoff": "Shared capabilities require coordination across teams. This account describes my contributions within a collaborative platform effort, not sole ownership of the platform.",
+    "outcome": "Shipped sportsbook features and reusable frontend capabilities with the wider engineering team.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "React Server Components"
+    ],
+    "limits": "Résumé-based account. No employer source code, interface captures or independently reproduced performance benchmark is published.",
+    "evidence": "Supplied résumé: ESPN / Disney, August 2024–January 2026."
+  },
+  "teaching": {
+    "title": "Teach the practice. Review the work.",
+    "summary": "At Oracle, I developed an AI engineering playbook and delivered practical training on AI fundamentals, prompts, APIs, agents and engineering best practices.",
+    "scope": "The public exercise is an original recreated example. It is not an Oracle document or evidence that every topic was delivered there.",
+    "exercise": {
+      "title": "A plausible answer still needs evidence.",
+      "prompt": "Given only the supplied source, return a summary and a source identifier. If the source does not establish the answer, return insufficient_evidence.",
+      "failure": "A response can match the expected JSON shape while citing a source that does not exist.",
+      "criteria": [
+        "Validate the response shape at the API boundary.",
+        "Check that the cited identifier exists in the supplied source set.",
+        "Keep missing evidence unresolved rather than inventing a citation.",
+        "Use human review to assess whether the source actually supports the summary."
+      ],
+      "limits": "An original public exercise using isolated synthetic fixtures. No model calls or employer code. The gate checks shape and source existence; a human must assess whether the source supports the answer.",
+      "download": "/examples/evidence-gate.mjs",
+      "command": "node evidence-gate.mjs",
+      "result": "Four deterministic fixtures produced the expected outcomes: existing source → ready for review; invented citation → missing source; explicit missing evidence → needs review; malformed response → invalid shape."
+    }
+  },
+  "strengths": [
+    {
+      "title": "Frontend architecture",
+      "items": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML & CSS",
+        "SSR & React Server Components"
+      ]
+    },
+    {
+      "title": "Engineering quality",
+      "items": [
+        "Accessibility review",
+        "Performance analysis",
+        "Unit & integration testing",
+        "E2E automation",
+        "API boundaries"
+      ]
+    },
+    {
+      "title": "Applied AI & leadership",
+      "items": [
+        "LLM API integration",
+        "Retrieval with citations",
+        "Agent orchestration",
+        "Executable acceptance checks",
+        "Technical direction & mentoring"
+      ]
+    }
+  ],
+  "links": {
+    "email": "mailto:jorgejac97@gmail.com",
+    "github": "https://github.com/jorgejac1",
+    "linkedin": "https://linkedin.com/in/jorge-jacome",
+    "website": "https://jjacome.com",
+    "resume": "/resume.pdf"
+  },
+  "education": {
+    "degree": "Bachelor’s Degree, Systems Engineering",
+    "institution": "ITESO",
+    "period": "2004–2010"
+  },
+  "awards": [
+    {
+      "title": "Chairman's Award",
+      "organization": "American Express",
+      "description": "Employee Outstanding Year Performance",
+      "date": "02/2018"
+    }
+  ],
+  "rag": {
+    "summary": "Private RAG work combines embeddings, scoped retrieval, structured generation, streaming and citations.",
+    "boundary": "Public explanations use synthetic data. Any scripted demonstration makes no model calls and does not expose private code or records."
+  },
+  "languages": [
+    "Spanish (native)",
+    "English (fluent)",
+    "Portuguese (intermediate)",
+    "French (intermediate)"
+  ],
+  "architecture": {
+    "title": "Completion follows the verifier",
+    "constraint": "An agent report is not acceptance evidence.",
+    "decision": "Run an explicit verifier and retain its output.",
+    "result": "Passing contracts update; failures remain pending for inspection and explicit retry.",
+    "scope": "Source-verified implementation pattern; sample outcomes are illustrative. A pass covers only the checked property.",
+    "image": "/assets/acceptance-flow.svg"
+  }
+}

@@ -1,41 +1,19 @@
-import { Navigation } from "@/components/layout/Navigation";
-import { Footer } from "@/components/layout/Footer";
-import { IntroTile } from "@/components/sections/IntroTile";
-import { StatusTile } from "@/components/sections/StatusTile";
-import { JourneyTile } from "@/components/sections/JourneyTile";
-import { FeaturedProjectTile } from "@/components/sections/FeaturedProjectTile";
-import { TechStackTile } from "@/components/sections/TechStackTile";
-import { MoreProjectsTile } from "@/components/sections/MoreProjectsTile";
-import { ConnectTile } from "@/components/sections/ConnectTile";
-
+import Image from "next/image";
+import Link from "next/link";
+import { portfolio } from "@/data/portfolio";
+import { ProjectShowcase } from "@/components/studio/ProjectShowcase";
 export default function Home() {
-  return (
-    <main id="main" className="min-h-screen">
-      <Navigation />
-      <div className="bento-grid max-w-6xl mx-auto px-4 py-24 md:py-32 grid grid-cols-1 md:grid-cols-12 gap-4">
-        <div className="md:col-span-8">
-          <IntroTile />
-        </div>
-        <div className="md:col-span-4">
-          <StatusTile />
-        </div>
-        <div className="md:col-span-4">
-          <JourneyTile />
-        </div>
-        <div className="md:col-span-4">
-          <FeaturedProjectTile />
-        </div>
-        <div className="md:col-span-4">
-          <TechStackTile />
-        </div>
-        <div className="md:col-span-8">
-          <MoreProjectsTile />
-        </div>
-        <div className="md:col-span-4">
-          <ConnectTile />
-        </div>
-      </div>
-      <Footer />
-    </main>
-  );
+    const { identity, enterpriseStory: enterprise, projects, teaching, strengths, links } = portfolio;
+    return <main id="main" className="shell" data-content-version={portfolio.version}>
+    <section className="hero" aria-labelledby="intro-title">
+      <div><p className="eyebrow">{identity.targetRole} · Applied AI</p><h1 id="intro-title">Frontend platforms.<br /><span>Applied AI.</span></h1><p className="hero-intro">{identity.intro}</p><div className="actions"><Link className="button" href="#work">Explore my work <span aria-hidden="true">↘</span></Link><a className="button secondary" href={links.resume} download>Download résumé <span aria-hidden="true">↓</span></a></div><p className="current-role">Currently {identity.currentRole} at {identity.currentCompany}</p></div>
+      <ProjectShowcase projects={projects.map(({ id, name, image, imageAlt, evidenceLabel, summary }) => ({ id, name, image, imageAlt, evidenceLabel, summary }))}/>
+    </section>
+    <div className="career-strip" aria-label="Career overview"><span>15+ years of frontend &amp; platform engineering</span><strong>Oracle</strong><strong>ESPN / Disney</strong><strong>American Express</strong></div>
+    <section id="work" className="section" aria-labelledby="enterprise-heading"><div className="section-heading"><div><p className="eyebrow">01 / Enterprise experience</p><h2 id="enterprise-heading">Build the product.<br />Strengthen the platform.</h2></div><p>Hands-on delivery and technical direction, working with engineers, Product and Design.</p></div><div className="enterprise"><div><p className="eyebrow">{enterprise.company} · Lead Software Engineer</p><h3 className="enterprise-title">{enterprise.title}</h3><p>{enterprise.problem}</p><Link className="text-link" href={`/work/${enterprise.id}`}>Read the contribution story ↗</Link></div><div className="contribution"><p className="eyebrow">My contribution</p><p>{enterprise.contribution}</p><p className="eyebrow">Delivered with the team</p><p>{enterprise.outcome}</p></div></div></section>
+    <section className="section" aria-labelledby="projects-heading"><div className="section-heading"><div><p className="eyebrow">02 / Independent work</p><h2 id="projects-heading">Ideas, made inspectable.</h2></div><p>Three projects where I connect frontend decisions with accessibility, agent coordination and verifiable results.</p></div><div className="project-list">{projects.map((project, index) => <Link className="project-row" key={project.id} href={`/work/${project.id}`}><span className="mono">0{index + 1}</span><div><h3>{project.name}</h3><p className="project-tech">{project.discipline}</p></div><div className="project-description"><p>{project.summary}</p></div><span className="arrow" aria-hidden="true">↗</span></Link>)}</div></section>
+    <section className="section leadership" aria-labelledby="leadership-heading"><div><p className="eyebrow">03 / Engineering leadership</p><h2 id="leadership-heading">{teaching.title}</h2></div><div className="leadership-copy"><p>{teaching.summary}</p><p>My approach pairs explicit acceptance criteria with reviewable work. The goal is to help engineers reason about the output, including when the evidence is missing.</p><Link className="text-link" href="/notes/evidence-before-completion">Explore a public teaching exercise ↗</Link></div></section>
+    <section id="about" className="section about" aria-labelledby="about-heading"><div className="portrait"><Image src={identity.portrait} alt={identity.portraitAlt} fill sizes="(max-width:760px) 330px, 32vw"/></div><div className="about-copy"><p className="eyebrow">04 / The engineer behind the work</p><h2 id="about-heading">I care about the interface.<br />And what makes it work.</h2><p>{identity.summary} I work across implementation, shared architecture and the practices that help teams maintain their software.</p><p>{portfolio.rag.summary} Public project stories focus on inspectable behavior and make their evidence limits explicit.</p><div className="strengths">{strengths.map(group => <div key={group.title}><h3>{group.title}</h3><p>{group.items.join(" · ")}</p></div>)}</div><Link className="text-link" href="/experience">Explore my full experience ↗</Link></div></section>
+    <section className="contact" id="contact" aria-labelledby="contact-heading"><div><p className="eyebrow">Let’s talk</p><h2 id="contact-heading">Have a hard frontend problem?</h2><p>I’m interested in Staff / Principal Frontend opportunities with applied AI depth.</p></div><div className="actions"><a className="button" href={links.email}>Email Jorge <span aria-hidden="true">↗</span></a></div></section>
+  </main>;
 }

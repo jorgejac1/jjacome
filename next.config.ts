@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    viewTransition: true,
+  async redirects() {
+    return [{ source: "/ResumeJorge.docx", destination: "/resume.pdf", permanent: true }];
   },
 };
 
