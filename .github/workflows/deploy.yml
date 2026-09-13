@@ -42,19 +42,27 @@ jobs:
           for locale in en es; do
             route="/"
             if [ "$locale" = "es" ]; then route="/es"; fi
-            npx --yes lighthouse@13.4.1 "http://localhost:3000$route" --chrome-flags="--headless --no-sandbox" --only-categories=performance --output=json --output-path="performance-report/$locale.json" --quiet
+            for sample in 1 2 3; do
+              npx --yes lighthouse@13.4.1 "http://localhost:3000$route" --chrome-flags="--headless --no-sandbox" --only-categories=performance --output=json --output-path="performance-report/$locale-$sample.json" --quiet
+            done
           done
           node --input-type=module <<'JS'
           import { readFileSync } from 'node:fs';
+          const median = values => [...values].sort((a,b) => a-b)[1];
           for (const locale of ['en', 'es']) {
-            const report = JSON.parse(readFileSync(`performance-report/${locale}.json`, 'utf8'));
-            if (report.runtimeError) throw new Error(report.runtimeError.message);
-            const lcp = report.audits['largest-contentful-paint'].numericValue;
-            const cls = report.audits['cumulative-layout-shift'].numericValue;
-            const tbt = report.audits['total-blocking-time'].numericValue;
-            if (![lcp, cls, tbt].every(Number.isFinite)) throw new Error(`${locale}: missing or invalid performance measurements`);
-            console.log(JSON.stringify({ locale, score: report.categories.performance.score * 100, lcpMs: lcp, cls, tbtMs: tbt }));
-            if (lcp > 2500 || cls > 0.1 || tbt > 200) throw new Error(`${locale}: mobile performance budget exceeded`);
+            const samples = [1,2,3].map(sample => {
+              const report = JSON.parse(readFileSync(`performance-report/${locale}-${sample}.json`, 'utf8'));
+              if (report.runtimeError) throw new Error(report.runtimeError.message);
+              const lcpMs = report.audits['largest-contentful-paint'].numericValue;
+              const cls = report.audits['cumulative-layout-shift'].numericValue;
+              const tbtMs = report.audits['total-blocking-time'].numericValue;
+              const score = report.categories.performance.score * 100;
+              if (![lcpMs, cls, tbtMs, score].every(Number.isFinite)) throw new Error(`${locale}: missing or invalid performance measurements`);
+              return { lcpMs, cls, tbtMs, score };
+            });
+            const result = Object.fromEntries(['lcpMs','cls','tbtMs','score'].map(key => [key, median(samples.map(sample => sample[key]))]));
+            console.log(JSON.stringify({locale, method:'median of three fresh mobile runs', samples, ...result}));
+            if (result.lcpMs > 2500 || result.cls > 0.1 || result.tbtMs > 200) throw new Error(`${locale}: mobile performance budget exceeded`);
           }
           JS
       - uses: actions/upload-artifact@v4
