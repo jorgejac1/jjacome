@@ -1,7 +1,7 @@
 """Check rendered local portfolio links, images and fragment destinations."""
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse, urldefrag
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 from pathlib import Path
 import sys,json
 base=sys.argv[1].rstrip('/')+'/'
@@ -21,7 +21,9 @@ class Page(HTMLParser):
 cache={};issues=[]
 def get(url):
  if url not in cache:
-  with urlopen(url,timeout=30) as r:
+  # Match browser format negotiation so optimized image variants share a cache key.
+  headers={"Accept":"image/avif,image/webp,image/apng,image/*,*/*;q=0.8"} if "/_next/image?" in url else {}
+  with urlopen(Request(url,headers=headers),timeout=30) as r:
    data=r.read();typ=r.headers.get('Content-Type','');p=None
    if 'text/html' in typ:p=Page();p.feed(data.decode())
    cache[url]=(typ,p)
