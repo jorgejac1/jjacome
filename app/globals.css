@@ -36,3 +36,5 @@ code{font-family:var(--font-mono);font-size:.85em;overflow-wrap:anywhere;color:v
 
 /* Feather the atmosphere to the page on all four edges. */
 .hero::before{mask-image:linear-gradient(to right,transparent,#000 16%,#000 84%,transparent),linear-gradient(to bottom,transparent,#000 15%,#000 75%,transparent);mask-composite:intersect}
+
+.footer-links .social-link{display:inline-flex;align-items:center;gap:9px;min-height:44px}.social-link svg{flex-shrink:0}.footer-links{align-items:center;flex-wrap:wrap}
