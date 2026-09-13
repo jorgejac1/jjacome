@@ -52,6 +52,7 @@ jobs:
             const lcp = report.audits['largest-contentful-paint'].numericValue;
             const cls = report.audits['cumulative-layout-shift'].numericValue;
             const tbt = report.audits['total-blocking-time'].numericValue;
+            if (![lcp, cls, tbt].every(Number.isFinite)) throw new Error(`${locale}: missing or invalid performance measurements`);
             console.log(JSON.stringify({ locale, score: report.categories.performance.score * 100, lcpMs: lcp, cls, tbtMs: tbt }));
             if (lcp > 2500 || cls > 0.1 || tbt > 200) throw new Error(`${locale}: mobile performance budget exceeded`);
           }
