@@ -13,7 +13,7 @@ export interface ProjectStory {
 export interface PortfolioProject {
   id: string; name: string; discipline: string; summary: string; contribution: string;
   outcome: string; technologies: string[]; image: string; fullImage: string; imageAlt: string;
-  evidenceLabel: string; github: string; story: ProjectStory;
+  evidenceLabel: string; previewExplanation: string; github: string; story: ProjectStory;
 }
 export interface PortfolioContent {
  version: string;
@@ -22,7 +22,7 @@ export interface PortfolioContent {
  languages: string[];
  roles: Role[];
  projects: PortfolioProject[];
- enterpriseStory: { id: string; company: string; title: string; problem: string; constraints: string; contribution: string; decision: string; tradeoff: string; outcome: string; technologies: string[]; limits: string; evidence: string };
+ enterpriseStory: { artifactTitle: string; artifactSource: string; artifactDecision: string; artifactResult: string; artifactBoundary: string; artifactDownload: string; id: string; company: string; title: string; problem: string; constraints: string; contribution: string; decision: string; tradeoff: string; outcome: string; technologies: string[]; limits: string; evidence: string };
  teaching: { title: string; summary: string; scope: string; exercise: { title: string; prompt: string; failure: string; criteria: string[]; download: string; command: string; result: string; limits: string } };
  strengths: { title: string; items: string[] }[];
  links: { email: string; github: string; linkedin: string; website: string; resume: string };

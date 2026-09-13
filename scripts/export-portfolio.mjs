@@ -22,12 +22,12 @@ for (const role of content.roles) {
 }
 if(content.projects.length !== 3) throw new Error('Expected three featured projects');
 for(const p of content.projects) {
- fields(p,['id','name','discipline','summary','contribution','outcome','image','fullImage','imageAlt','evidenceLabel','github'],'project'); strings(p.technologies,'project technologies');
+ fields(p,['id','name','discipline','summary','contribution','outcome','image','fullImage','imageAlt','evidenceLabel','previewExplanation','github'],'project'); strings(p.technologies,'project technologies');
  fields(p.story,['id','name','discipline','title','summary','image','fullImage','alt','problemTitle','problem','contributionTitle','contribution','decisionTitle','decision','tradeoff','captureBoundary','outcomeTitle','outcome','limits','source'],'story'); strings(p.story.tags,'story.tags');
  if(p.story.id !== p.id) throw new Error('Project/story id mismatch');
  for(const key of ['flow','steps']) { if(!Array.isArray(p.story[key]) || !p.story[key].length) throw new Error(`Missing story ${key}`); p.story[key].forEach(x => fields(x,['title','body'],key)); }
 }
-fields(content.enterpriseStory,['id','company','title','problem','constraints','contribution','decision','tradeoff','outcome','limits','evidence'],'enterpriseStory');strings(content.enterpriseStory.technologies,'enterpriseStory.technologies');
+fields(content.enterpriseStory,['id','company','title','problem','constraints','contribution','decision','tradeoff','outcome','limits','evidence','artifactTitle','artifactSource','artifactDecision','artifactResult','artifactBoundary','artifactDownload'],'enterpriseStory');strings(content.enterpriseStory.technologies,'enterpriseStory.technologies');
 fields(content.teaching,['title','summary','scope'],'teaching');fields(content.teaching.exercise,['title','prompt','failure','download','command','result','limits'],'exercise');strings(content.teaching.exercise.criteria,'exercise.criteria');
 fields(content.architecture,['title','constraint','decision','result','scope','image'],'architecture');
 if(!Array.isArray(content.strengths) || !content.strengths.length) throw new Error('Missing strengths');

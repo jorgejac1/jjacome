@@ -1,12 +1,12 @@
 {
-  "version": "2026-09-13.2",
+  "version": "2026-09-13.3",
   "identity": {
     "name": "Jorge Jacome",
     "targetRole": "Staff / Principal Frontend Engineer",
     "currentRole": "Principal Member of Technical Staff",
     "currentCompany": "Oracle",
     "headline": "Frontend platforms. Applied AI. Engineering leadership.",
-    "intro": "I’m Jorge. I build frontend platforms with React, Next.js, TypeScript and JavaScript, develop applied AI systems, and help engineers turn sound practices into working software.",
+    "intro": "I’m Jorge. I build frontend platforms and applied AI systems, and help engineering teams deliver both.",
     "summary": "15+ years in frontend and platform engineering, with experience at Oracle, ESPN / Disney and American Express.",
     "portrait": "/assets/jorge-portrait.jpg",
     "portraitAlt": "Jorge Jacome smiling in a black-and-white portrait"
@@ -323,7 +323,8 @@
         "outcome": "The implementation includes selection, filtering and finding-detail tests, plus rescan utilities that check whether rule IDs remain. The result connects a reported issue to a reviewable change.",
         "limits": "A suggested fix still needs review. Automated checks and rescanning do not certify accessibility or establish a measured accessibility outcome.",
         "source": "https://github.com/jorgejac1/allylab"
-      }
+      },
+      "previewExplanation": "Read the table: severity describes impact; status tracks the review workflow. These are separate decisions."
     },
     {
       "id": "conductor",
@@ -398,7 +399,8 @@
         "outcome": "The implementation validates declared dependencies, detects cycles and schedules using dependsOn. The captured interface makes the relationship between two prerequisites and a review track readable.",
         "limits": "This demonstrates planning, not agent delivery, reliability metrics or employer adoption.",
         "source": "https://github.com/jorgejac1/conductor-agents"
-      }
+      },
+      "previewExplanation": "Read the graph: Review interface depends on Component system and Retrieval API. The connecting lines show which work must come first."
     },
     {
       "id": "evalgate",
@@ -473,7 +475,8 @@
         "outcome": "The CLI parses pending contracts, runs their verifiers, prints failure output and updates the Markdown using the results. In the sample run, the failed source-evidence contract remains pending.",
         "limits": "Sample results are demonstration evidence, not product performance metrics. Passing checks do not prove unchecked properties.",
         "source": "https://github.com/jorgejac1/evalgate"
-      }
+      },
+      "previewExplanation": "Read the checks: two pass; the source-evidence check deliberately fails. A completed run does not mean every acceptance check passed."
     }
   ],
   "enterpriseStory": {
@@ -494,7 +497,13 @@
       "React Server Components"
     ],
     "limits": "Résumé-based account. No employer source code, interface captures or independently reproduced performance benchmark is published.",
-    "evidence": "Supplied résumé: ESPN / Disney, August 2024–January 2026."
+    "evidence": "Supplied résumé: ESPN / Disney, August 2024–January 2026.",
+    "artifactTitle": "ESPN contribution record",
+    "artifactSource": "Source: Jorge Jacome’s supplied résumé, ESPN / Disney section, August 2024–January 2026.",
+    "artifactDecision": "Decision rationale, reconstructed for this portfolio: place common rendering and integration capabilities in shared libraries, while keeping sportsbook flows specific to the product. This explains the contribution; it is not a contemporaneous employer decision record.",
+    "artifactResult": "Résumé-reported result: delivered parlay and single-bet flows and shipped reusable date/time utilities, a test-execution framework and React Server Components rendering primitives for the shared platform.",
+    "artifactBoundary": "Recreated from my résumé, not an internal ESPN document. Team contribution; no employer source code or independently verified adoption or performance metrics.",
+    "artifactDownload": "/assets/espn-contribution-record.txt"
   },
   "teaching": {
     "title": "Teach the practice. Review the work.",

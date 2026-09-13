@@ -1,0 +1,15 @@
+ESPN CONTRIBUTION RECORD
+
+Source: Jorge Jacome’s supplied résumé, ESPN / Disney section, August 2024–January 2026.
+
+DOCUMENTED CONTRIBUTION
+As Lead Software Engineer, I led sportsbook feature delivery and contributed TypeScript component injection, routes, context providers, React Server Components rendering and reusable libraries to the shared platform.
+
+DECISION
+Decision rationale, reconstructed for this portfolio: place common rendering and integration capabilities in shared libraries, while keeping sportsbook flows specific to the product. This explains the contribution; it is not a contemporaneous employer decision record.
+
+RESULT
+Résumé-reported result: delivered parlay and single-bet flows and shipped reusable date/time utilities, a test-execution framework and React Server Components rendering primitives for the shared platform.
+
+BOUNDARY
+Recreated from my résumé, not an internal ESPN document. Team contribution; no employer source code or independently verified adoption or performance metrics.

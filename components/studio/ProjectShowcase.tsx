@@ -8,6 +8,7 @@ export interface ShowcaseProject {
     image: string;
     imageAlt: string;
     evidenceLabel: string;
+    previewExplanation: string;
     summary: string;
 }
 export function ProjectShowcase({ projects }: {
@@ -56,7 +57,7 @@ export function ProjectShowcase({ projects }: {
         <Link className={`showcase-image project-image-${project.id}`} href={`/work/${project.id}`} aria-label={`Read the ${project.name} engineering story`}>
           <Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 900px) 90vw, 43vw" priority={selected === 0}/>
         </Link>
-        <div className="showcase-copy-stack">{projects.map((item, index) => <div key={item.id} className="showcase-copy" style={{ visibility: index === selected ? "visible" : "hidden" }} aria-hidden={index !== selected} inert={index !== selected}><p className="evidence">{item.evidenceLabel}</p><h2><Link href={`/work/${item.id}`}>{item.name}<span aria-hidden="true"> ↗</span></Link></h2><p>{item.summary}</p></div>)}</div>
+        <div className="showcase-copy-stack">{projects.map((item, index) => <div key={item.id} className="showcase-copy" style={{ visibility: index === selected ? "visible" : "hidden" }} aria-hidden={index !== selected} inert={index !== selected}><p className="evidence">{item.evidenceLabel}</p><h2><Link href={`/work/${item.id}`}>{item.name}<span aria-hidden="true"> ↗</span></Link></h2><p>{item.previewExplanation}</p></div>)}</div>
       </div>
       <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{project.name}, project {selected + 1} of {projects.length}</p>
     </section>);
