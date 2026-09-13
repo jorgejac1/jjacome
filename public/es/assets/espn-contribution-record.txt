@@ -1,0 +1,15 @@
+REGISTRO DE CONTRIBUCIONES EN ESPN
+
+Fuente: currículum proporcionado por Jorge Jacome, sección ESPN / Disney, agosto de 2024 a enero de 2026.
+
+CONTRIBUCIÓN DOCUMENTADA
+Como Lead Software Engineer, lideré la entrega de funcionalidades de apuestas deportivas y contribuí a la inyección de componentes TypeScript, rutas, proveedores de contexto, renderizado con React Server Components y bibliotecas reutilizables de la plataforma.
+
+DECISIÓN
+Justificación reconstruida para este portafolio: ubicar las capacidades comunes de renderizado e integración en bibliotecas compartidas y mantener los flujos de apuestas específicos del producto. Explica la contribución; no es un registro de decisiones elaborado por el empleador en aquel momento.
+
+RESULTADO
+Resultado documentado en el currículum: entrega de flujos de apuestas combinadas e individuales, utilidades reutilizables de fecha y hora, un framework de ejecución de pruebas y primitivas de renderizado con React Server Components para la plataforma compartida.
+
+ALCANCE
+Recreado a partir de mi currículum; no es un documento interno de ESPN. Contribución en equipo, sin código del empleador ni métricas de adopción o rendimiento verificadas de forma independiente.

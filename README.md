@@ -1,132 +1,52 @@
-# Jorge Jacome - Portfolio
+# Jorge Jacome — frontend engineering and applied AI
 
-Modern, high-performance portfolio built with Next.js 14, TypeScript, and Tailwind CSS.
+Bilingual English/Spanish portfolio for https://jjacome.com. Built with Next.js App Router, React, TypeScript and Tailwind CSS. The Engineering Studio design uses CSS motion and inline SVG icons; no animation service, database or model API is required.
 
-## 🚀 Features
+## Development
 
-- ⚡ **Next.js 14** with App Router
-- 🎨 **Tailwind CSS** for styling
-- 📘 **TypeScript** for type safety
-- 🎭 **Framer Motion** for animations
-- 📱 **Fully Responsive** design
-- ♿ **Accessible** components
-- 🎯 **SEO Optimized**
-- 📊 **JSON-based data** - Easy to update
-- 🧩 **Reusable components** - Well-organized architecture
+Use Node 22 (`nvm use`) and npm 10.9.8. Run `npm ci`, then `npm run dev`.
 
-## 📁 Project Structure
+English routes start at `/`; Spanish routes start at `/es`. Shared page components receive a locale, with separate static root layouts setting the document language. Translation switches preserve the corresponding page. Case-study slugs remain stable across languages.
 
-```
-portfolio-nextjs/
-├── app/                    # Next.js app directory
-│   ├── layout.tsx         # Root layout with metadata
-│   ├── page.tsx           # Main page
-│   └── globals.css        # Global styles
-├── components/
-│   ├── ui/                # Reusable UI components
-│   │   ├── Button.tsx
-│   │   ├── Card.tsx
-│   │   ├── Section.tsx
-│   │   └── SkillBar.tsx
-│   ├── sections/          # Page sections
-│   │   ├── Hero.tsx
-│   │   ├── Experience.tsx
-│   │   ├── Skills.tsx
-│   │   ├── Projects.tsx
-│   │   └── Contact.tsx
-│   └── layout/            # Layout components
-│       ├── Navigation.tsx
-│       └── Footer.tsx
-├── data/                  # JSON data files
-│   ├── profile.json
-│   ├── experience.json
-│   ├── skills.json
-│   └── projects.json
-└── public/                # Static assets
+## Content and downloads
+
+- `data/portfolio.json`: English source and shared professional facts.
+- `data/portfolio.es.json`: Spanish equivalent, with the same schema and identifiers.
+- `components/studio/pages/`: shared portfolio page implementations.
+- `public/` and `public/es/`: public images, localized downloads and diagrams.
+
+Update both content files without changing claims or evidence boundaries. Generate public résumés with Python + ReportLab:
 
 ```
-
-## 🛠️ Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/jorgejac1/jjacome.git
-cd portfolio-nextjs
+python3 scripts/generate-resume.py --locale en
+python3 scripts/generate-resume.py --locale es
 ```
 
-2. **Install dependencies**
-```bash
-npm install
+The original user-supplied résumé is not modified. Generated PDFs and provenance manifests are committed. `npm run validate:content` checks locale completeness, linked artifacts and PDF hashes without requiring Python during a deployment.
+
+## Validation
+
 ```
-
-3. **Run development server**
-```bash
-npm run dev
-```
-
-4. **Open your browser**
-Navigate to [http://localhost:3000](http://localhost:3000)
-
-## 📝 Customization
-
-### Update Personal Information
-
-Edit the JSON files in the `/data` directory:
-
-- `profile.json` - Personal info, contact details
-- `experience.json` - Work experience, positions, awards
-- `skills.json` - Technical skills, proficiency levels
-- `projects.json` - Portfolio projects, descriptions
-
-### Modify Styling
-
-Tailwind configuration is in `tailwind.config.ts`. Customize:
-- Colors (primary theme colors)
-- Animations
-- Breakpoints
-- Custom utilities
-
-### Add New Sections
-
-1. Create component in `components/sections/`
-2. Import and add to `app/page.tsx`
-3. Update navigation in `components/layout/Navigation.tsx`
-
-## 🚢 Deployment
-
-### Vercel (Recommended)
-
-1. Push code to GitHub
-2. Import project in [Vercel](https://vercel.com)
-3. Deploy with one click
-
-### Other Platforms
-
-```bash
+npm run validate:content
+npm run lint
+npm run typecheck
+npm test
+npm audit --audit-level=high
 npm run build
-npm start
 ```
 
-## 🎨 Technologies Used
+Browser tests use Playwright and axe in CI across Chromium, Firefox, WebKit and mobile WebKit. To run in a dedicated test environment: `npx playwright install --with-deps` followed by `npx playwright test`. The production HTTP crawl is `python3 scripts/check-portfolio-links.py http://localhost:3000` after starting the built app. Generated reports are ignored by Git.
 
-- **Framework**: Next.js 14
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Animations**: Framer Motion
-- **Deployment**: Vercel
+## Analytics
 
-## 📄 License
+Vercel Web Analytics and Speed Insights render only for `VERCEL_ENV=production`. The existing Vercel project must have these integrations enabled. Fixed custom events measure resume-download clicks, contact intent, social destinations, project opens and actual project selections. Properties use fixed locale/project/channel/placement values. Events never include message contents or arbitrary URL parameters, and telemetry failure does not block links. A contact click does not establish email delivery.
 
-MIT License - feel free to use this project for your own portfolio!
+The private design comparison site is a separate artifact and is not part of this production deployment.
 
-## 🤝 Contact
+## Release
 
-- **Email**: jorgejac97@gmail.com
-- **LinkedIn**: [jorge-jacome](https://linkedin.com/in/jorge-jacome)
-- **GitHub**: [jorgejac1](https://github.com/jorgejac1)
-- **Website**: [jjacome.com](https://jjacome.com)
+GitHub `main` is the source of truth. CI validates pushes; it does not run an unconditional production deployment. The existing Vercel Git integration builds staged production candidates with automatic custom-domain assignment disabled. The release operator must verify checks and the exact staged deployment before promoting it to jjacome.com. Do not re-enable a second competing deploy workflow.
 
----
+Record the current live deployment as the rollback target before promotion. Validate English/Spanish pages, contact/social links, both résumés, redirects, metadata, image delivery and analytics after release. An instant rollback reassigns domains to a retained previously-live deployment; it does not restore changed environment or DNS settings.
 
-Built with ❤️ by Jorge Jacome
+See `docs/jjacome-production-release-plan.md` for the detailed release gates and `docs/production-release-validation.md` for release evidence when available.

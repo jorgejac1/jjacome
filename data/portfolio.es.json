@@ -1,0 +1,599 @@
+{
+  "version": "2026-09-13.3",
+  "identity": {
+    "name": "Jorge Jacome",
+    "targetRole": "Ingeniero Frontend Staff / Principal",
+    "currentRole": "Principal Member of Technical Staff",
+    "currentCompany": "Oracle",
+    "headline": "Plataformas frontend. IA aplicada. Liderazgo técnico.",
+    "intro": "Soy Jorge. Desarrollo plataformas frontend y sistemas de IA aplicada, y ayudo a los equipos de ingeniería a llevarlos a la práctica.",
+    "summary": "Más de 15 años en ingeniería frontend y de plataformas, con experiencia en Oracle, ESPN / Disney y American Express.",
+    "portrait": "/assets/jorge-portrait.jpg",
+    "portraitAlt": "Jorge Jacome sonríe en un retrato en blanco y negro"
+  },
+  "roles": [
+    {
+      "id": "oracle",
+      "company": "Oracle",
+      "positions": [
+        {
+          "title": "Principal Member of Technical Staff",
+          "period": "01/2026 – Actualidad",
+          "current": true,
+          "highlights": [
+            "Aporto dirección técnica, mentoría, revisión de código y coordinación entre equipos para Messaging Center, parte de la plataforma EHR de Oracle.",
+            "Escribí una guía de ingeniería con IA e impartí formación sobre Codex para programación, pruebas y documentación.",
+            "Desarrollé e impartí formación práctica sobre fundamentos de IA, diseño de prompts, integración de APIs, flujos con agentes y buenas prácticas de ingeniería.",
+            "Rediseñé la arquitectura de automatización de pruebas E2E mediante desarrollo asistido por IA."
+          ],
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Automatización E2E",
+            "Codex",
+            "Flujos con agentes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "espn",
+      "company": "ESPN / Disney",
+      "positions": [
+        {
+          "title": "Lead Software Engineer",
+          "period": "08/2024 – 01/2026",
+          "highlights": [
+            "Lideré la entrega de funcionalidades de apuestas deportivas con React, TypeScript y Node.js, en colaboración con Producto, Diseño e Ingeniería.",
+            "Contribuí a la inyección de componentes, las rutas, los proveedores de contexto y el renderizado con React Server Components en la plataforma web compartida.",
+            "Desarrollé y mantuve bibliotecas reutilizables de la plataforma y contribuí a mejoras de rendimiento.",
+            "Brindé mentoría sobre React moderno, TypeScript y prácticas de pruebas."
+          ],
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Node.js",
+            "ESPN BET API"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amex",
+      "company": "American Express",
+      "positions": [
+        {
+          "title": "Senior Engineer II",
+          "period": "12/2018 – 07/2024",
+          "highlights": [
+            "Desarrollé más de 30 componentes React para clientes en el panel de tarjetahabientes y los productos de ahorro y cuentas corrientes.",
+            "Reduje en cuatro segundos el tiempo de carga del panel mediante SSR y optimización frontend.",
+            "Brindé mentoría a más de 10 ingenieros mediante retroalimentación, orientación técnica y conversaciones de desarrollo profesional.",
+            "Lideré la entrega de funcionalidades y colaboré con Producto y Diseño en alcance, planificación y coordinación de lanzamientos."
+          ],
+          "technologies": [
+            "React",
+            "TypeScript",
+            "Redux",
+            "Node.js",
+            "Jest",
+            "React Testing Library",
+            "SWR",
+            "Jenkins",
+            "Splunk",
+            "GraphQL"
+          ]
+        },
+        {
+          "title": "Engineer I",
+          "period": "09/2017 – 12/2018",
+          "highlights": [
+            "Desarrollé y mantuve interfaces React y componentes reutilizables para las experiencias de tarjetahabientes.",
+            "Contribuí a las pruebas, la coordinación de entregas y el mantenimiento en producción."
+          ],
+          "technologies": [
+            "React",
+            "JavaScript",
+            "Redux",
+            "GraphQL",
+            "Jest",
+            "Mocha",
+            "Chai",
+            "Docker",
+            "Jenkins"
+          ]
+        },
+        {
+          "title": "Engineer II",
+          "period": "09/2015 – 09/2017",
+          "highlights": [
+            "Contribuí a la migración de la plataforma de tarjetahabientes y a funcionalidades frontend para clientes.",
+            "Trabajé en el renderizado del panel, la integración de APIs y el soporte en producción."
+          ],
+          "technologies": [
+            "React",
+            "Node.js",
+            "Redux",
+            "Jest",
+            "SSR",
+            "Jenkins",
+            "Splunk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "igate",
+      "company": "iGATE",
+      "positions": [
+        {
+          "title": "Java UI Developer",
+          "period": "11/2014 – 09/2015",
+          "highlights": [
+            "Creé sitios internos con información de productos y servicios para proveedores de la empresa.",
+            "Desarrollé una aplicación de mapas con Java, JSF y Servlets, integrada con Google Maps API.",
+            "Desarrollé funciones del ecosistema Chubb para que los proveedores visualizaran ubicaciones de clientes y empresas."
+          ],
+          "technologies": [
+            "Java",
+            "JSF",
+            "Servlets",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "Ajax",
+            "Google Maps API"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "systems-usa",
+      "company": "Systems USA",
+      "positions": [
+        {
+          "title": "Java UI Developer",
+          "period": "01/2013 – 10/2014",
+          "highlights": [
+            "Lideré el desarrollo frontend de Virginia Case Management System como consultor de Deloitte.",
+            "Desarrollé interfaces de elegibilidad con JSP, HTML, CSS, jQuery y AJAX, respaldadas por Java y Oracle DB."
+          ],
+          "technologies": [
+            "Java",
+            "JSP",
+            "Oracle DB",
+            "HTML",
+            "CSS",
+            "jQuery",
+            "Ajax"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "softtek",
+      "company": "Softtek",
+      "positions": [
+        {
+          "title": "Java UI Developer",
+          "period": "01/2011 – 12/2012",
+          "highlights": [
+            "Desarrollé aplicaciones Java e interfaces web para GE Treasury.",
+            "Optimicé interacciones con bases de datos Oracle y coordiné la entrega de funcionalidades como responsable técnico de proyectos."
+          ],
+          "technologies": [
+            "Java",
+            "Servlets",
+            "Struts",
+            "Spring",
+            "JSP",
+            "Oracle DB",
+            "HTML",
+            "CSS",
+            "jQuery"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radycal",
+      "company": "Radycal Systems",
+      "positions": [
+        {
+          "title": "Web Developer",
+          "period": "10/2010 – 12/2011",
+          "highlights": [
+            "Lideré el desarrollo de una plataforma de gestión escolar con PHP, AJAX, JavaScript, HTML y MySQL.",
+            "Desarrollé funciones para gestionar estudiantes, docentes y clases.",
+            "Creé informes de calificaciones de estudiantes por clase."
+          ],
+          "technologies": [
+            "PHP",
+            "MySQL",
+            "Ajax",
+            "JavaScript",
+            "HTML"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nettours",
+      "company": "Nettours",
+      "positions": [
+        {
+          "title": "Web Developer",
+          "period": "11/2009 – 10/2010",
+          "highlights": [
+            "Desarrollé el sitio y los flujos de reservas de Nettours para mejorar la experiencia en línea de sus clientes.",
+            "Desarrollé funcionalidades con PHP, Ajax, JavaScript, HTML, CSS y MySQL."
+          ],
+          "technologies": [
+            "PHP",
+            "MySQL",
+            "Ajax",
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "allylab",
+      "name": "AllyLab",
+      "discipline": "Frontend + IA",
+      "summary": "Un flujo de revisión de accesibilidad con un panel React, una API y una CLI, acompañado de un sitio Next.js.",
+      "contribution": "Desarrollé el flujo de revisión de accesibilidad de AllyLab en un panel React, una API y una CLI, además de su sitio Next.js. La interfaz conecta hallazgos automáticos con sugerencias asistidas por IA y revisión humana.",
+      "outcome": "La implementación incluye pruebas de selección, filtrado y detalle de hallazgos, además de utilidades de reescaneo que comprueban si persisten los identificadores de reglas. El resultado conecta un problema reportado con un cambio que se puede revisar.",
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Accesibilidad",
+        "APIs de LLM"
+      ],
+      "image": "/assets/allylab-focus.png",
+      "fullImage": "/assets/allylab-findings.png",
+      "imageAlt": "Tabla de AllyLab con columnas de severidad y estado, y cuatro hallazgos sintéticos de accesibilidad",
+      "evidenceLabel": "Aplicación real · secuencia guiada de capturas · hallazgos y métricas sintéticos · sin llamadas a APIs ni modelos. Interfaz original en inglés.",
+      "github": "https://github.com/jorgejac1/allylab",
+      "story": {
+        "id": "allylab",
+        "name": "AllyLab",
+        "discipline": "Frontend + IA",
+        "title": "De los hallazgos a cambios que se pueden revisar.",
+        "summary": "Un flujo de revisión de accesibilidad con un panel React, una API y una CLI, acompañado de un sitio Next.js.",
+        "tags": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Accesibilidad",
+          "APIs de LLM"
+        ],
+        "image": "allylab-focus.png",
+        "fullImage": "allylab-findings.png",
+        "alt": "Tabla de AllyLab con columnas de severidad y estado, y cuatro hallazgos sintéticos de accesibilidad",
+        "problemTitle": "Un hallazgo necesita un siguiente paso.",
+        "problem": "Un hallazgo de accesibilidad es solo el comienzo. Los ingenieros necesitan entender su severidad, seguir su estado, inspeccionar un cambio propuesto y comprobar qué problemas persisten.",
+        "contributionTitle": "Conectar el hallazgo con el trabajo de ingeniería.",
+        "contribution": "Desarrollé el flujo de revisión de accesibilidad de AllyLab en un panel React, una API y una CLI, además de su sitio Next.js. La interfaz conecta hallazgos automáticos con sugerencias asistidas por IA y revisión humana.",
+        "decisionTitle": "Separar urgencia, ciclo de vida y costo de carga.",
+        "decision": "La severidad y el estado del problema se mantienen separados porque responden a preguntas distintas: urgencia y ciclo de vida. Las vistas de informes se cargan bajo demanda; el código de gráficos y exportación queda fuera de la carga inicial.",
+        "tradeoff": "Las pantallas diferidas necesitan estados de carga explícitos. Las sugerencias estructuradas siguen siendo propuestas para revisión humana. No se afirma una mejora cuantificada del tamaño del paquete ni del tiempo de carga.",
+        "flow": [
+          {
+            "title": "Hallazgo",
+            "body": "El resultado del escaneo identifica la regla, la severidad y la interfaz afectada."
+          },
+          {
+            "title": "Cambio sugerido",
+            "body": "Las sugerencias estructuradas asistidas por IA vinculan el código propuesto con el hallazgo."
+          },
+          {
+            "title": "Revisión y reescaneo",
+            "body": "Inspeccionar el cambio y comprobar si la regla sigue apareciendo."
+          }
+        ],
+        "steps": [
+          {
+            "title": "Revisar hallazgos",
+            "body": "Cuatro hallazgos sintéticos mantienen separados la severidad y el estado del ciclo de vida. Ilustran estados de la interfaz, no resultados de accesibilidad de un cliente real.",
+            "image": "allylab-01-findings.png",
+            "alt": "Tabla real de AllyLab con cuatro problemas sintéticos y columnas separadas de severidad y estado"
+          },
+          {
+            "title": "Filtrar por severidad",
+            "body": "Seleccionar Critical limita la tabla al hallazgo de texto alternativo ausente. La puntuación y el tiempo de escaneo de este ejemplo son sintéticos, no mediciones de rendimiento.",
+            "image": "allylab-02-filter.png",
+            "alt": "Filtro Critical seleccionado en AllyLab y un hallazgo de texto alternativo ausente"
+          },
+          {
+            "title": "Inspeccionar el hallazgo",
+            "body": "El panel de detalle muestra la regla, el selector y el elemento de origen. El ejemplo no tiene captura del elemento, por lo que la interfaz real muestra su estado vacío. No se activó Generate AI Fix.",
+            "image": "allylab-03-detail.png",
+            "alt": "Panel de detalle de AllyLab con regla, selector CSS, elemento HTML y un estado explícito de captura ausente"
+          }
+        ],
+        "captureBoundary": "Aplicación real · secuencia guiada de capturas · hallazgos y métricas sintéticos · sin llamadas a APIs ni modelos. Interfaz original en inglés.",
+        "outcomeTitle": "Un flujo de revisión que se puede inspeccionar.",
+        "outcome": "La implementación incluye pruebas de selección, filtrado y detalle de hallazgos, además de utilidades de reescaneo que comprueban si persisten los identificadores de reglas. El resultado conecta un problema reportado con un cambio que se puede revisar.",
+        "limits": "Una corrección sugerida aún requiere revisión. Las comprobaciones automáticas y el reescaneo no certifican la accesibilidad ni demuestran un resultado medido de accesibilidad.",
+        "source": "https://github.com/jorgejac1/allylab"
+      },
+      "previewExplanation": "Cómo leer la tabla: la severidad describe el impacto; el estado sigue el flujo de revisión. Son decisiones distintas."
+    },
+    {
+      "id": "conductor",
+      "name": "Conductor",
+      "discipline": "Coordinación de agentes",
+      "summary": "Las líneas de trabajo, sus dependencias y el contexto específico de cada tarea permiten revisar el trabajo paralelo de agentes antes de ejecutarlo.",
+      "contribution": "Desarrollé Conductor para organizar el trabajo de agentes en líneas con dependencias y contexto Markdown específico. Su interfaz de planificación hace visibles esas relaciones antes de la ejecución.",
+      "outcome": "La implementación valida las dependencias declaradas, detecta ciclos y programa el trabajo mediante dependsOn. La captura permite entender la relación entre dos requisitos previos y una línea de revisión.",
+      "technologies": [
+        "TypeScript",
+        "Grafos de dependencias",
+        "Orquestación de agentes",
+        "Contexto Markdown"
+      ],
+      "image": "/assets/conductor-focus.png",
+      "fullImage": "/assets/conductor-full.png",
+      "imageAlt": "Grafo de Conductor: Review interface depende de Component system y Retrieval API",
+      "evidenceLabel": "Interfaz real de planificación local · tres líneas de trabajo sintéticas · ningún agente ejecutado. Interfaz original en inglés.",
+      "github": "https://github.com/jorgejac1/conductor-agents",
+      "story": {
+        "id": "conductor",
+        "name": "Conductor",
+        "discipline": "Coordinación de agentes",
+        "title": "Hacer visibles las dependencias.",
+        "summary": "Las líneas de trabajo, sus dependencias y el contexto específico de cada tarea permiten revisar el trabajo paralelo de agentes antes de ejecutarlo.",
+        "tags": [
+          "TypeScript",
+          "Grafos de dependencias",
+          "Orquestación de agentes",
+          "Contexto Markdown"
+        ],
+        "image": "conductor-focus.png",
+        "fullImage": "conductor-full.png",
+        "alt": "Grafo de Conductor: Review interface depende de Component system y Retrieval API",
+        "problemTitle": "El trabajo paralelo también necesita un orden.",
+        "problem": "El trabajo de agentes requiere un plan explícito: qué tareas pueden empezar, cuáles dependen de otra línea y qué contexto corresponde a cada una.",
+        "contributionTitle": "Dar a cada línea su propio contexto.",
+        "contribution": "Desarrollé Conductor para organizar el trabajo de agentes en líneas con dependencias y contexto Markdown específico. Su interfaz de planificación hace visibles esas relaciones antes de la ejecución.",
+        "decisionTitle": "Expresar el orden en un grafo explícito.",
+        "decision": "Cada línea tiene su propio contexto y sus dependencias, en lugar de depender de una conversación indiferenciada. Antes de iniciar el trabajo, el planificador comprueba el grafo de dependencias y detecta ciclos.",
+        "tradeoff": "La utilidad del plan depende de las relaciones y el contexto proporcionados. Describir el alcance en el contexto no demuestra que los permisos se apliquen técnicamente.",
+        "flow": [
+          {
+            "title": "Definir líneas de trabajo",
+            "body": "Dar a cada tarea un objetivo, contexto y dependencias declaradas."
+          },
+          {
+            "title": "Resolver dependencias",
+            "body": "Validar el grafo y detectar ciclos antes de planificar la ejecución."
+          },
+          {
+            "title": "Programar trabajo disponible",
+            "body": "Iniciar tareas según estén listas sus dependencias."
+          }
+        ],
+        "steps": [
+          {
+            "title": "Requisitos previos",
+            "body": "Component system y Retrieval API son líneas independientes que actúan como requisitos previos en este ejemplo sintético."
+          },
+          {
+            "title": "Dependencia",
+            "body": "Review interface depende de ambos requisitos. El grafo permite inspeccionar esa relación."
+          },
+          {
+            "title": "Límite de la demostración",
+            "body": "La captura solo muestra planificación. No se ejecutaron agentes, por lo que el grafo no prueba una entrega exitosa."
+          }
+        ],
+        "captureBoundary": "Interfaz real de planificación local · tres líneas de trabajo sintéticas · ningún agente ejecutado. Interfaz original en inglés.",
+        "outcomeTitle": "Un orden que se puede inspeccionar.",
+        "outcome": "La implementación valida las dependencias declaradas, detecta ciclos y programa el trabajo mediante dependsOn. La captura permite entender la relación entre dos requisitos previos y una línea de revisión.",
+        "limits": "Esto demuestra planificación, no entregas realizadas por agentes, métricas de fiabilidad ni adopción por un empleador.",
+        "source": "https://github.com/jorgejac1/conductor-agents"
+      },
+      "previewExplanation": "Cómo leer el grafo: Review interface depende de Component system y Retrieval API. Las líneas indican qué trabajo debe realizarse primero."
+    },
+    {
+      "id": "evalgate",
+      "name": "Evalgate",
+      "discipline": "Verificación ejecutable",
+      "summary": "Los contratos de trabajo en Markdown conectan criterios de aceptación con comprobaciones ejecutables y resultados visibles.",
+      "contribution": "Desarrollé Evalgate para conectar contratos de trabajo en Markdown con comprobaciones ejecutables, registrar sus resultados y mantener los fallos sin resolver para inspección y reintento explícito.",
+      "outcome": "La CLI interpreta los contratos pendientes, ejecuta sus verificadores, muestra la salida de los fallos y actualiza el Markdown según los resultados. En la ejecución de ejemplo, el contrato sin evidencia de origen permanece pendiente.",
+      "technologies": [
+        "TypeScript",
+        "CLI",
+        "Comprobaciones ejecutables",
+        "Verificación de agentes"
+      ],
+      "image": "/assets/evalgate-focus.png",
+      "fullImage": "/assets/evalgate-full.png",
+      "imageAlt": "Tarjetas de Evalgate con dos comprobaciones aprobadas y otra sin evidencia que permanece pendiente",
+      "evidenceLabel": "Ejecución real de ejemplo local · dos comprobaciones aprobadas · un fallo deliberado · comprobaciones sintéticas. Interfaz original en inglés.",
+      "github": "https://github.com/jorgejac1/evalgate",
+      "story": {
+        "id": "evalgate",
+        "name": "Evalgate",
+        "discipline": "Verificación ejecutable",
+        "title": "Conservar la evidencia del fallo.",
+        "summary": "Los contratos de trabajo en Markdown conectan criterios de aceptación con comprobaciones ejecutables y resultados visibles.",
+        "tags": [
+          "TypeScript",
+          "CLI",
+          "Comprobaciones ejecutables",
+          "Verificación de agentes"
+        ],
+        "image": "evalgate-focus.png",
+        "fullImage": "evalgate-full.png",
+        "alt": "Tarjetas de Evalgate con dos comprobaciones aprobadas y otra sin evidencia que permanece pendiente",
+        "problemTitle": "Decir que está terminado no es evidencia.",
+        "problem": "Que un agente declare una tarea terminada no demuestra que cumpla los criterios de aceptación. El resultado necesita una comprobación que se pueda inspeccionar.",
+        "contributionTitle": "Conectar el contrato con la comprobación.",
+        "contribution": "Desarrollé Evalgate para conectar contratos de trabajo en Markdown con comprobaciones ejecutables, registrar sus resultados y mantener los fallos sin resolver para inspección y reintento explícito.",
+        "decisionTitle": "Dejar que el verificador determine la finalización.",
+        "decision": "Definir un verificador junto con la tarea y usar su resultado para actualizar la finalización. Las comprobaciones shell y HTTP evalúan condiciones explícitas; el juicio de un modelo tiene una incertidumbre distinta.",
+        "tradeoff": "Una comprobación aprobada solo demuestra la propiedad evaluada. Los reintentos son explícitos y el número declarado es orientativo. Las comprobaciones JSON validan una estructura limitada; los patrones de archivos no son un motor de diferencias semánticas.",
+        "flow": [
+          {
+            "title": "Definir la aceptación",
+            "body": "Escribir la tarea y la propiedad ejecutable que se va a verificar."
+          },
+          {
+            "title": "Ejecutar el verificador",
+            "body": "Evaluar la condición y conservar su salida."
+          },
+          {
+            "title": "Aceptar o conservar el fallo",
+            "body": "Actualizar los contratos aprobados y mantener los fallos pendientes de inspección."
+          }
+        ],
+        "steps": [
+          {
+            "title": "Comprobaciones aprobadas",
+            "body": "Dos comprobaciones sintéticas se aprobaron en la ejecución local real. Son resultados ilustrativos, no una prueba comparativa de rendimiento."
+          },
+          {
+            "title": "Evidencia ausente",
+            "body": "La comprobación con evidencia de origen deliberadamente ausente falló. Su contrato permanece pendiente en lugar de declarar la tarea terminada."
+          },
+          {
+            "title": "Revisar y reintentar",
+            "body": "Leer la salida del fallo antes de un reintento explícito. Una respuesta plausible no sustituye la evidencia ausente."
+          }
+        ],
+        "captureBoundary": "Ejecución real de ejemplo local · dos comprobaciones aprobadas · un fallo deliberado · comprobaciones sintéticas. Interfaz original en inglés.",
+        "outcomeTitle": "La finalización depende de la evidencia.",
+        "outcome": "La CLI interpreta los contratos pendientes, ejecuta sus verificadores, muestra la salida de los fallos y actualiza el Markdown según los resultados. En la ejecución de ejemplo, el contrato sin evidencia de origen permanece pendiente.",
+        "limits": "Los resultados del ejemplo son evidencia de demostración, no métricas de rendimiento del producto. Aprobar una comprobación no prueba propiedades que no se evaluaron.",
+        "source": "https://github.com/jorgejac1/evalgate"
+      },
+      "previewExplanation": "Cómo leer las comprobaciones: dos se aprueban; la de evidencia de origen falla deliberadamente. Terminar una ejecución no significa aprobar todos los criterios de aceptación."
+    }
+  ],
+  "enterpriseStory": {
+    "id": "espn-platform",
+    "company": "ESPN / Disney",
+    "title": "Entrega de producto sobre una plataforma frontend compartida.",
+    "problem": "La experiencia de apuestas deportivas de ESPN necesitaba funcionalidades de producto y capacidades reutilizables dentro de una plataforma web compartida.",
+    "constraints": "La entrega de producto y los cambios de la plataforma involucraban a Ingeniería, Producto, Diseño y colaboradores de los equipos de marca.",
+    "contribution": "Como Lead Software Engineer, lideré la entrega de funcionalidades de apuestas deportivas y contribuí a la inyección de componentes TypeScript, rutas, proveedores de contexto, renderizado con React Server Components y bibliotecas reutilizables de la plataforma.",
+    "decision": "Desarrollar capacidades reutilizables de plataforma junto con flujos específicos del producto, para que el trabajo común de renderizado e integración apoye las experiencias de marca.",
+    "tradeoff": "Las capacidades compartidas requieren coordinación entre equipos. Este relato describe mis contribuciones dentro de un esfuerzo colectivo, no autoría exclusiva de la plataforma.",
+    "outcome": "Entregué funcionalidades de apuestas deportivas y capacidades frontend reutilizables junto con el equipo de ingeniería.",
+    "technologies": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "React Server Components"
+    ],
+    "limits": "Relato basado en mi currículum. No se publica código del empleador, capturas de su interfaz ni una prueba de rendimiento reproducida de forma independiente.",
+    "evidence": "Currículum proporcionado: ESPN / Disney, agosto de 2024 a enero de 2026.",
+    "artifactTitle": "Registro de contribuciones en ESPN",
+    "artifactSource": "Fuente: currículum proporcionado por Jorge Jacome, sección ESPN / Disney, agosto de 2024 a enero de 2026.",
+    "artifactDecision": "Justificación reconstruida para este portafolio: ubicar las capacidades comunes de renderizado e integración en bibliotecas compartidas y mantener los flujos de apuestas específicos del producto. Explica la contribución; no es un registro de decisiones elaborado por el empleador en aquel momento.",
+    "artifactResult": "Resultado documentado en el currículum: entrega de flujos de apuestas combinadas e individuales, utilidades reutilizables de fecha y hora, un framework de ejecución de pruebas y primitivas de renderizado con React Server Components para la plataforma compartida.",
+    "artifactBoundary": "Recreado a partir de mi currículum; no es un documento interno de ESPN. Contribución en equipo, sin código del empleador ni métricas de adopción o rendimiento verificadas de forma independiente.",
+    "artifactDownload": "/es/assets/espn-contribution-record.txt"
+  },
+  "teaching": {
+    "title": "Enseñar la práctica. Revisar el trabajo.",
+    "summary": "En Oracle desarrollé una guía de ingeniería con IA e impartí formación práctica sobre fundamentos de IA, prompts, APIs, agentes y buenas prácticas de ingeniería.",
+    "scope": "El ejercicio público es un ejemplo original recreado. No es un documento de Oracle ni evidencia de que todos sus temas se hayan impartido allí.",
+    "exercise": {
+      "title": "Una respuesta plausible también necesita evidencia.",
+      "prompt": "Usando únicamente la fuente proporcionada, devuelve un resumen y un identificador de fuente. Si la fuente no permite establecer la respuesta, devuelve insufficient_evidence.",
+      "failure": "Una respuesta puede cumplir la estructura JSON esperada y aun así citar una fuente inexistente.",
+      "criteria": [
+        "Validar la estructura de la respuesta en el límite de la API.",
+        "Comprobar que el identificador citado exista en el conjunto de fuentes proporcionado.",
+        "Mantener la evidencia ausente como pendiente, en lugar de inventar una cita.",
+        "Recurrir a revisión humana para evaluar si la fuente realmente respalda el resumen."
+      ],
+      "limits": "Ejercicio público original con ejemplos sintéticos aislados. Sin llamadas a modelos ni código del empleador. La validación comprueba la estructura y la existencia de la fuente; una persona debe evaluar si esta respalda la respuesta.",
+      "download": "/es/examples/evidence-gate.mjs",
+      "command": "node evidence-gate.mjs",
+      "result": "Cuatro ejemplos deterministas produjeron los resultados esperados: fuente existente → lista para revisión; cita inventada → fuente ausente; evidencia explícitamente insuficiente → requiere revisión; respuesta mal formada → estructura inválida."
+    }
+  },
+  "strengths": [
+    {
+      "title": "Arquitectura frontend",
+      "items": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "HTML & CSS",
+        "SSR & React Server Components"
+      ]
+    },
+    {
+      "title": "Calidad de ingeniería",
+      "items": [
+        "Revisión de accesibilidad",
+        "Análisis de rendimiento",
+        "Pruebas unitarias y de integración",
+        "Automatización E2E",
+        "Límites de las APIs"
+      ]
+    },
+    {
+      "title": "IA aplicada y liderazgo",
+      "items": [
+        "Integración de APIs de LLM",
+        "Recuperación con citas",
+        "Orquestación de agentes",
+        "Comprobaciones de aceptación ejecutables",
+        "Dirección técnica y mentoría"
+      ]
+    }
+  ],
+  "links": {
+    "email": "mailto:jorgejac97@gmail.com",
+    "github": "https://github.com/jorgejac1",
+    "linkedin": "https://linkedin.com/in/jorge-jacome",
+    "website": "https://jjacome.com",
+    "resume": "/es/resume.pdf"
+  },
+  "education": {
+    "degree": "Licenciatura en Ingeniería en Sistemas",
+    "institution": "ITESO",
+    "period": "2004–2010"
+  },
+  "awards": [
+    {
+      "title": "Chairman's Award",
+      "organization": "American Express",
+      "description": "Reconocimiento al desempeño sobresaliente del año",
+      "date": "02/2018"
+    }
+  ],
+  "rag": {
+    "summary": "Mi trabajo privado con RAG combina embeddings, recuperación con alcance delimitado, generación estructurada, streaming y citas.",
+    "boundary": "Las explicaciones públicas usan datos sintéticos. Las demostraciones con respuestas predefinidas no llaman a modelos ni exponen código o registros privados."
+  },
+  "languages": [
+    "Español (nativo)",
+    "Inglés (fluido)",
+    "Portugués (intermedio)",
+    "Francés (intermedio)"
+  ],
+  "architecture": {
+    "title": "La finalización depende del verificador",
+    "constraint": "El informe de un agente no es evidencia de aceptación.",
+    "decision": "Ejecutar un verificador explícito y conservar su salida.",
+    "result": "Los contratos aprobados se actualizan; los fallos permanecen pendientes para inspección y reintento explícito.",
+    "scope": "Patrón de implementación verificado en el código; los resultados de ejemplo son ilustrativos. Una aprobación solo cubre la propiedad evaluada.",
+    "image": "/es/assets/acceptance-flow.svg"
+  }
+}
